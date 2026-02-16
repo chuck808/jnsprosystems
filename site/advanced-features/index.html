@@ -1,0 +1,2300 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://appgatepro.github.io/docs/advanced-features/">
+      
+      
+        <link rel="prev" href="../operation/">
+      
+      
+        <link rel="next" href="../settings/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Advanced Features - AppGatePro Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-features" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AppGatePro Documentation" class="md-header__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AppGatePro Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Advanced Features
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quickstart/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../external-devices/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  External Devices
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../operation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Basic Operation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Advanced Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../settings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Settings Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../troubleshooting/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AppGatePro Documentation" class="md-nav__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AppGatePro Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-devices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Features
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Mode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Session Mode?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabling-session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enabling Session Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running a Session
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-data-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Data Contents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases-for-session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Cases for Session Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-tracking-speed-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Tracking &amp; Speed Calculation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distance Tracking &amp; Speed Calculation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-tracking-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Tracking Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-speed-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Speed Calculations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finish-screen-with-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finish Screen with Speed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-with-distance-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training with Distance Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imu-analytics-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IMU Analytics Deep Dive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IMU Analytics Deep Dive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-imu-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the IMU Measures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Metrics Explained
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Metrics Explained">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reaction-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reaction Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-force-acceleration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Force (Acceleration)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitch-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pitch Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roll-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roll Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wheelie-detection-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wheelie Detection &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceleration Graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-dashboard-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web Dashboard Features
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Dashboard Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connecting to Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sharing Results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uci-compliance-abort-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UCI Compliance &amp; Abort Window
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UCI Compliance &amp; Abort Window">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uci-random-start-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UCI Random Start Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abort-window-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abort Window Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competition-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competition Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-troubleshooting-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Troubleshooting &amp; Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Troubleshooting &amp; Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-quality-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Quality Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Mode
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Mode">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Session Mode?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#enabling-session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enabling Session Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-a-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running a Session
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Save Options
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-data-contents" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Data Contents
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#use-cases-for-session-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Use Cases for Session Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-tracking-speed-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Tracking &amp; Speed Calculation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distance Tracking &amp; Speed Calculation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-tracking-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Tracking Modes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-speed-calculations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example Speed Calculations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#finish-screen-with-speed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Finish Screen with Speed
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#training-with-distance-goals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Training with Distance Goals
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#imu-analytics-deep-dive" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        IMU Analytics Deep Dive
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="IMU Analytics Deep Dive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-the-imu-measures" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What the IMU Measures
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-metrics-explained" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Metrics Explained
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Metrics Explained">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#reaction-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reaction Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#g-force-acceleration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Force (Acceleration)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pitch-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pitch Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#roll-angle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Roll Angle
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wheelie-detection-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wheelie Detection &amp; Analysis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#acceleration-graph" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Acceleration Graph
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-dashboard-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web Dashboard Features
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Dashboard Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-to-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connecting to Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Live Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#results-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Results View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-comparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Comparison
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-export" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Export
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sharing-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sharing Results
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#remote-control" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Control
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uci-compliance-abort-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UCI Compliance &amp; Abort Window
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="UCI Compliance &amp; Abort Window">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uci-random-start-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        UCI Random Start Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#abort-window-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Abort Window Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competition-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competition Mode
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-troubleshooting-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Troubleshooting &amp; Optimization
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Troubleshooting &amp; Optimization">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#performance-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-quality-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Quality Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#session-strategy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Strategy
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="advanced-features">Advanced Features</h1>
+<p>Master the powerful features that make AppGatePro a professional training tool. This guide covers session mode, detailed analytics, and advanced timing capabilities.</p>
+<hr />
+<h2 id="session-mode">Session Mode</h2>
+<p>Track multiple runs as a connected session for comparative analysis and progress tracking.</p>
+<h3 id="what-is-session-mode">What is Session Mode?</h3>
+<p>Session Mode allows you to:
+- Track multiple runs (1-20) as a batch
+- Compare performance across runs
+- Save all data together
+- Analyze trends and improvement
+- Perfect for structured training</p>
+<p><strong>Example:</strong> A 5-gate session tracks five separate runs, then prompts you to save all the data together with comparative statistics.</p>
+<h3 id="enabling-session-mode">Enabling Session Mode</h3>
+<ol>
+<li>Navigate to <strong>Settings</strong></li>
+<li>Toggle <strong>Session Mode: ON</strong></li>
+<li>Set <strong>Gates per Session</strong> (1-20)</li>
+<li>Return to AppGatePro</li>
+</ol>
+<p>The session counter appears on screen: <strong>"GATES: 5/5"</strong> (example)</p>
+<h3 id="running-a-session">Running a Session</h3>
+<p><strong>Starting position:</strong>
+- Counter shows full count (e.g., 5/5)
+- System is ready for first run</p>
+<p><strong>Run 1:</strong>
+1. Tap RESET → START
+2. Complete your run
+3. Finish screen displays results
+4. Counter updates: <strong>"GATES: 4/5"</strong>
+5. After 25 seconds (if Auto-Transition is ON), returns to ready
+6. OR tap screen to continue immediately</p>
+<p><strong>Runs 2-4:</strong>
+- Same process repeats
+- Counter decrements: 4/5 → 3/5 → 2/5 → 1/5
+- Each run recorded independently</p>
+<p><strong>Final Run (Run 5):</strong>
+1. Counter shows: <strong>"GATES: 1/5"</strong>
+2. Complete the run
+3. <strong>Session Complete popup appears:</strong>
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>╔════════════════════════════════╗
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>║    Session Complete!           ║
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>╠════════════════════════════════╣
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>║  5 gates completed             ║
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>║                                ║
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>║  [Save to SD]                  ║
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>║  [Upload to Web]               ║
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>║  [Cancel]                      ║
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>╚════════════════════════════════╝
+</code></pre></div>
+4. Choose save option</p>
+<h3 id="save-options">Save Options</h3>
+<p><strong>Save to SD:</strong>
+- Writes session data to SD card
+- Creates CSV file with all runs
+- Includes comparison table
+- Individual acceleration graphs
+- Can be opened in Excel/Google Sheets</p>
+<p><strong>Upload to Web:</strong>
+- Requires WiFi connection
+- Uploads to cloud dashboard
+- Accessible from any device
+- Generates shareable link
+- Automatic backup</p>
+<p><strong>Cancel:</strong>
+- Discards session data
+- Counter resets to 5/5
+- Cannot be recovered
+- Use if session was invalid</p>
+<h3 id="session-data-contents">Session Data Contents</h3>
+<p>Each saved session includes:</p>
+<p><strong>Per-run data:</strong>
+- Timestamp
+- Elapsed time
+- Reaction time
+- Max G-force
+- Average G-force
+- Peak acceleration
+- Distance (if configured)
+- Speed (if breakbeam used)
+- Wheelie analytics (if detected)</p>
+<p><strong>Comparative statistics:</strong>
+- Best run (fastest time)
+- Worst run (slowest time)
+- Average time across all runs
+- Consistency score
+- Trend analysis (improving/declining)
+- Personal records broken</p>
+<p><strong>Graphs:</strong>
+- Individual acceleration curves for each run
+- Overlay comparison (all runs on one chart)
+- G-force distribution</p>
+<h3 id="use-cases-for-session-mode">Use Cases for Session Mode</h3>
+<p><strong>Individual Training:</strong>
+- Set Gates = 5-10
+- Practice consistent starts
+- Identify best technique
+- Track fatigue effects (later runs vs. early runs)</p>
+<p><strong>Club Practice (Multiple Riders):</strong>
+- Set Gates = number of riders
+- Each rider completes one run
+- Save captures all riders' data
+- Coach can compare and rank</p>
+<p><strong>Competition Heats:</strong>
+- Set Gates = number of heats
+- Track performance across qualifying rounds
+- Identify best heat
+- Strategy for finals</p>
+<p><strong>Technique Experimentation:</strong>
+- Set Gates = 4-6
+- Try different starting techniques
+- Run 1-2: Normal technique
+- Run 3-4: Modified technique
+- Compare results objectively</p>
+<hr />
+<h2 id="distance-tracking-speed-calculation">Distance Tracking &amp; Speed Calculation</h2>
+<p>Measure performance over known distances with automatic speed calculation.</p>
+<h3 id="configuring-distance">Configuring Distance</h3>
+<ol>
+<li><strong>Enable Distance toggle</strong> in Settings</li>
+<li><strong>Set Distance per Run:</strong> 5m, 10m, 15m, 20m, 25m, 30m</li>
+<li><strong>Measure your track:</strong></li>
+<li>Use tape measure from start line to breakbeam</li>
+<li>Ensure accurate measurement for speed calculations</li>
+</ol>
+<h3 id="distance-tracking-modes">Distance Tracking Modes</h3>
+<p><strong>Mode 1: Internal Timer (External Timer OFF)</strong></p>
+<p>Configuration:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>TIMER: OFF
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Distance: ON (20m)
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Sprint Time: 10 seconds
+</code></pre></div></p>
+<p>Behavior:
+- Timer counts down to configured time (10s)
+- Distance is stored but no speed calculated
+- Speed displays as 0.00 m/s
+- Useful for: Tracking distance metadata without timing equipment</p>
+<p><strong>Mode 2: External Breakbeam (External Timer ON)</strong></p>
+<p>Configuration:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>TIMER: ON (JNS_Timing paired)
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>Distance: ON (20m)
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>Breakbeam at 20m mark
+</code></pre></div></p>
+<p>Behavior:
+- Timer runs until beam break
+- System calculates: <strong>Speed = Distance ÷ Time</strong>
+- Speed displayed in m/s and km/h
+- Precise measurement for performance tracking</p>
+<h3 id="example-speed-calculations">Example Speed Calculations</h3>
+<p><strong>20m sprint:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Distance: 20 meters
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>Time: 5.234 seconds
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>Speed: 20 ÷ 5.234 = 3.82 m/s
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>      = 13.75 km/h
+</code></pre></div></p>
+<p><strong>10m sprint:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Distance: 10 meters
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Time: 2.891 seconds
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Speed: 10 ÷ 2.891 = 3.46 m/s
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>      = 12.46 km/h
+</code></pre></div></p>
+<p><strong>30m sprint:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Distance: 30 meters
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Time: 7.102 seconds
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Speed: 30 ÷ 7.102 = 4.22 m/s
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>      = 15.19 km/h
+</code></pre></div></p>
+<h3 id="finish-screen-with-speed">Finish Screen with Speed</h3>
+<p>When distance and breakbeam are configured:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>╔══════════════════════════════════╗
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>║     RUN #47 - 14:32:18          ║
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>╠══════════════════════════════════╣
+<a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>║  TIME:         5.234s           ║
+<a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>║  DISTANCE:     20 meters        ║
+<a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>║  SPEED:        3.82 m/s         ║
+<a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>║                13.75 km/h        ║
+<a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>║                                  ║
+<a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>║  REACTION:     0.287s           ║
+<a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>║  MAX G:        1.8 G            ║
+<a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>║  AVG G:        0.9 G            ║
+<a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>╠══════════════════════════════════╣
+<a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>║  [VIEW GRAPH]  [SAVE]  [NEXT]   ║
+<a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>╚══════════════════════════════════╝
+</code></pre></div>
+<h3 id="training-with-distance-goals">Training with Distance Goals</h3>
+<p><strong>Progressive Distance Training:</strong></p>
+<p>Week 1: 10m focus
+- Session 1: Average 3.2 m/s
+- Session 2: Average 3.4 m/s
+- Session 3: Average 3.5 m/s</p>
+<p>Week 2: 20m focus
+- Session 1: Average 3.6 m/s
+- Session 2: Average 3.7 m/s
+- Session 3: Average 3.8 m/s</p>
+<p>Track improvement by:
+- Comparing average speeds week-over-week
+- Identifying plateau points
+- Setting incremental goals (e.g., +0.1 m/s per week)</p>
+<hr />
+<h2 id="imu-analytics-deep-dive">IMU Analytics Deep Dive</h2>
+<p>Understanding the detailed biomechanical data captured during each run.</p>
+<h3 id="what-the-imu-measures">What the IMU Measures</h3>
+<p><strong>6-Axis Inertial Measurement Unit:</strong>
+- 3-axis accelerometer (X, Y, Z acceleration)
+- 3-axis gyroscope (pitch, roll, yaw rotation)
+- Sampling rate: 200Hz (every 5ms)
+- Gravity compensation for true acceleration
+- Complementary filter for sensor fusion</p>
+<h3 id="key-metrics-explained">Key Metrics Explained</h3>
+<h4 id="reaction-time">Reaction Time</h4>
+<p><strong>Definition:</strong> Time from gate drop beep to first detectable forward motion</p>
+<p><strong>How it's detected:</strong>
+1. System monitors for backward pull (rider loading bike)
+2. Detects forward surge when acceleration exceeds threshold
+3. Calculates time delta between beep and motion</p>
+<p><strong>Typical values:</strong>
+- <strong>Elite:</strong> 0.15-0.25 seconds
+- <strong>Advanced:</strong> 0.25-0.35 seconds
+- <strong>Intermediate:</strong> 0.35-0.50 seconds
+- <strong>Novice:</strong> 0.50+ seconds</p>
+<p><strong>Improving reaction time:</strong>
+- Focus on anticipation without false starting
+- Practice "loading" the bike before gate drops
+- Consistency more important than raw speed</p>
+<h4 id="g-force-acceleration">G-Force (Acceleration)</h4>
+<p><strong>Definition:</strong> Gravitational force units measuring acceleration intensity</p>
+<p><strong>Calculation:</strong>
+- System measures linear acceleration in all axes
+- Compensates for gravity (1G baseline)
+- Filters noise for clean readings
+- Reports peak and average G-force</p>
+<p><strong>Typical values:</strong>
+- <strong>Max G-force:</strong> 1.5-2.5 G during initial pedal strokes
+- <strong>Average G-force:</strong> 0.6-1.2 G over full sprint
+- <strong>Elite riders:</strong> Sustain higher average G longer</p>
+<p><strong>What it means:</strong>
+- Higher peak G = explosive power
+- Higher average G = sustained power
+- G-force at specific times shows power curve</p>
+<h4 id="pitch-angle">Pitch Angle</h4>
+<p><strong>Definition:</strong> Forward/backward tilt of bike relative to ground</p>
+<p><strong>Why it matters:</strong>
+- Indicates body position and weight distribution
+- Shows wheelie control
+- Affects power transfer efficiency</p>
+<p><strong>Typical values:</strong>
+- <strong>Start position:</strong> -2° to 2° (level)
+- <strong>Acceleration:</strong> 5° to 12° (slight nose-up)
+- <strong>Wheelie:</strong> 15° to 25° (front wheel up)
+- <strong>Over-rotation:</strong> 25°+ (loss of control)</p>
+<p><strong>Optimal range:</strong>
+- 8-12° during peak acceleration
+- Maintains traction while maximizing power
+- Too low = front-heavy, less power
+- Too high = wheelie, loss of forward drive</p>
+<h4 id="roll-angle">Roll Angle</h4>
+<p><strong>Definition:</strong> Side-to-side tilt of bike</p>
+<p><strong>Why it matters:</strong>
+- Shows straightness of line
+- Indicates balance and control
+- Excessive roll = wasted motion</p>
+<p><strong>Typical values:</strong>
+- <strong>Good technique:</strong> ±3° maximum
+- <strong>Acceptable:</strong> ±5-8°
+- <strong>Poor technique:</strong> ±10°+ (bike weaving)</p>
+<h3 id="wheelie-detection-analysis">Wheelie Detection &amp; Analysis</h3>
+<p>The system automatically detects and analyzes wheelies:</p>
+<p><strong>Detection criteria:</strong>
+1. Pitch angle exceeds 15° (configurable)
+2. Sustained for &gt;0.1 seconds
+3. Pitch returns below 10.5° to end (hysteresis prevents flicker)</p>
+<p><strong>Wheelie metrics:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>╔══════════════════════════════════╗
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>║    Wheelie Analysis              ║
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>╠══════════════════════════════════╣
+<a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>║  Start Time:    0.82s            ║
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>║  Duration:      1.15s            ║
+<a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>║  Max Pitch:     18.3°            ║
+<a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>║  End Time:      1.97s            ║
+<a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>║                                  ║
+<a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>║  Distance:      4.2m @ wheelie   ║
+<a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>║  G-force:       1.6G at start    ║
+<a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>╚══════════════════════════════════╝
+</code></pre></div>
+<p><strong>Training with wheelie data:</strong></p>
+<p><strong>Controlled wheelie (good):</strong>
+- Starts around 0.8-1.2s after gate drop
+- Duration: 0.8-1.5s
+- Max pitch: 15-20°
+- Smooth transition back to ground</p>
+<p><strong>Excessive wheelie (problematic):</strong>
+- Starts too early (&lt;0.5s)
+- Duration: &gt;2.0s
+- Max pitch: &gt;22°
+- Hard landing or loss of speed</p>
+<p><strong>Use wheelie data to:</strong>
+- Practice consistent wheelie timing
+- Control wheelie height (pitch angle)
+- Minimize airborne time
+- Optimize transition for speed</p>
+<h3 id="acceleration-graph">Acceleration Graph</h3>
+<p>The finish screen displays a detailed acceleration vs. time graph:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>G-force
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  ↑
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>2.0┤     ●
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>   │    ╱ ╲
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>1.5┤   ╱   ╲
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>   │  ╱     ╲___
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>1.0┤ ╱          ╲___
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>   │╱               ╲___
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>0.5┤                    ╲___
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>   └───────────────────────────→ Time (s)
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>   0   1   2   3   4   5   6
+</code></pre></div>
+<p><strong>Reading the graph:</strong></p>
+<p><strong>Phase 1 (0-1s): Explosive start</strong>
+- Rapid rise to peak G-force
+- Reaction time visible as delay from 0
+- Peak G indicates maximum power output</p>
+<p><strong>Phase 2 (1-3s): Sustained power</strong>
+- Gradual decline from peak
+- Area under curve = total work done
+- Flatness indicates power endurance</p>
+<p><strong>Phase 3 (3-6s): Maintenance</strong>
+- Lower G-force, approaching cruise
+- Indicates transition to steady state
+- Shows fatigue effects</p>
+<p><strong>Comparing runs:</strong>
+- Overlay multiple graphs (session mode)
+- Look for: Higher peaks, larger area under curve
+- Consistency in peak timing
+- Longer sustained power phase</p>
+<hr />
+<h2 id="web-dashboard-features">Web Dashboard Features</h2>
+<p>Access real-time data and advanced analytics from any device with a web browser.</p>
+<h3 id="connecting-to-dashboard">Connecting to Dashboard</h3>
+<p><strong>Quick method (QR code):</strong>
+1. Open Settings on CoreS3
+2. Scroll to QR code at bottom
+3. Scan with phone/tablet camera
+4. Tap notification to connect
+5. Dashboard opens automatically</p>
+<p><strong>Manual method:</strong>
+1. Go to WiFi settings on your device
+2. Connect to network shown on CoreS3 (e.g., "AppGatePro_ABC123")
+3. Open browser
+4. Navigate to URL shown on CoreS3
+5. Dashboard loads</p>
+<h3 id="live-monitoring">Live Monitoring</h3>
+<p><strong>During a run, dashboard displays:</strong></p>
+<p><strong>Status section:</strong>
+- Current state: IDLE / ARMED / TIMING / FINISHED
+- Elapsed time (updating continuously)
+- Gate counter (if session mode active)</p>
+<p><strong>Real-time chart:</strong>
+- G-force graph updates at 20Hz
+- Smooth animation showing acceleration
+- Color-coded zones (peak, sustained, cruise)</p>
+<p><strong>Quick stats:</strong>
+- Current G-force value
+- Reaction time (when detected)
+- Distance covered (calculated from acceleration)</p>
+<h3 id="results-view">Results View</h3>
+<p><strong>After each run completes:</strong></p>
+<p><strong>Summary card:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>┌─────────────────────────────────┐
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>│  Run #47 - 14:32:18            │
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>├─────────────────────────────────┤
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>│  Time:        5.234s            │
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>│  Reaction:    0.287s            │
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>│  Max G:       1.8 G             │
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>│  Avg G:       0.9 G             │
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>│  Speed:       3.82 m/s          │
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>└─────────────────────────────────┘
+</code></pre></div></p>
+<p><strong>Interactive graph:</strong>
+- Acceleration vs. time
+- Zoomable and pannable
+- Hover for exact values at any point
+- Export as PNG image</p>
+<p><strong>Detailed breakdown:</strong>
+- Reaction time analysis
+- Power phases (explosive, sustained, cruise)
+- Wheelie detection (if occurred)
+- Pitch and roll throughout run</p>
+<h3 id="session-comparison">Session Comparison</h3>
+<p><strong>When session mode is active:</strong></p>
+<p><strong>Runs table:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>╔═══════════════════════════════════════════╗
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>║  Run  │  Time   │ React │ Max G │ Speed  ║
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>╠═══════════════════════════════════════════╣
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>║   1   │ 5.345s  │ 0.298 │ 1.7G  │ 3.75   ║
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>║   2   │ 5.234s  │ 0.287 │ 1.8G  │ 3.82 ● ║
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>║   3   │ 5.412s  │ 0.312 │ 1.6G  │ 3.69   ║
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>║   4   │ 5.289s  │ 0.291 │ 1.8G  │ 3.79   ║
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>║   5   │ 5.201s  │ 0.283 │ 1.9G  │ 3.85 ● ║
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>╚═══════════════════════════════════════════╝
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>● = Personal Record
+</code></pre></div></p>
+<p><strong>Comparative charts:</strong>
+- All runs overlaid on one graph
+- Compare acceleration curves
+- Identify most efficient technique
+- Spot consistency issues</p>
+<p><strong>Statistics:</strong>
+- Average time
+- Best/worst run
+- Standard deviation (consistency metric)
+- Trend analysis (improving/declining)</p>
+<h3 id="data-export">Data Export</h3>
+<p><strong>Export options from dashboard:</strong></p>
+<p><strong>CSV format:</strong>
+- Opens in Excel, Google Sheets
+- Each run as a row
+- All metrics as columns
+- Time-series data in separate sheet</p>
+<p><strong>JSON format:</strong>
+- For programmers/data scientists
+- Complete data structure
+- All arrays preserved (acceleration, pitch, etc.)
+- Import into custom analysis tools</p>
+<p><strong>PDF report:</strong>
+- Formatted document
+- Graphs embedded
+- Summary statistics
+- Shareable with coaches/parents</p>
+<h3 id="sharing-results">Sharing Results</h3>
+<p><strong>Generate shareable link:</strong>
+1. Click "Share" on any run or session
+2. System generates unique URL
+3. Copy link to clipboard
+4. Share via text, email, social media</p>
+<p><strong>Recipients can:</strong>
+- View results without logging in
+- See graphs and statistics
+- Download data
+- Compare to their own results (if they have accounts)</p>
+<p><strong>Privacy:</strong>
+- Links are unique and hard to guess
+- Can be made private (password protected)
+- Can expire after set time
+- You control who sees your data</p>
+<h3 id="remote-control">Remote Control</h3>
+<p><strong>If enabled in settings, coach/parent can:</strong></p>
+<p><strong>Start/Stop functions:</strong>
+- Trigger RESET sequence remotely
+- Initiate START sequence
+- Abort run if necessary
+- Useful for solo riders with remote coach</p>
+<p><strong>View-only mode (default):</strong>
+- Dashboard shows live data
+- No control functions
+- Safe for spectators</p>
+<p><strong>Enabling remote control:</strong>
+1. Settings → Web Dashboard
+2. Toggle "Remote Control: ON"
+3. Dashboard gains control buttons
+4. Use responsibly (no false starts!)</p>
+<hr />
+<h2 id="uci-compliance-abort-window">UCI Compliance &amp; Abort Window</h2>
+<p>Understanding the official rules implemented in AppGatePro.</p>
+<h3 id="uci-random-start-rules">UCI Random Start Rules</h3>
+<p><strong>Requirement:</strong> Random delay between "Watch the Gate" and gate drop</p>
+<p><strong>AppGatePro implementation:</strong>
+- Random delay: 100ms to 2700ms
+- Cryptographically secure randomization (not predictable)
+- Meets UCI specifications exactly
+- Audit log for verification</p>
+<p><strong>Sequence timing:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>&quot;Random Start&quot; announcement
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>    ↓ (1.8 seconds)
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>&quot;Riders Ready - Watch the Gate&quot;
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>    ↓ (random: 0.1-2.7 seconds)
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>Light sequence begins (4 lights)
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>    ↓ (480ms: 4 × 120ms)
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>Gate drop tone (2250ms)
+</code></pre></div></p>
+<h3 id="abort-window-rules">Abort Window Rules</h3>
+<p><strong>UCI rule:</strong> Riders can abort before "Watch the Gate" completes, but not after.</p>
+<p><strong>AppGatePro enforcement:</strong></p>
+<p><strong>Valid abort (before "Watch the Gate"):</strong>
+1. User presses ABORT button
+2. Sequence stops immediately
+3. Abort light pattern plays (on external lights if connected)
+4. Returns to idle state
+5. No timing recorded</p>
+<p><strong>Invalid abort (after "Watch the Gate"):</strong>
+1. "Watch the Gate" completes
+2. <strong>Abort button disabled automatically</strong>
+3. Pressing ABORT has no effect
+4. Sequence continues to completion
+5. Run is timed normally</p>
+<p><strong>Visual indication:</strong>
+- ABORT button grayed out when disabled
+- Warning text: "Abort window closed"
+- Ensures fair starts in competition</p>
+<h3 id="competition-mode">Competition Mode</h3>
+<p><strong>For official use:</strong>
+1. Enable all external devices (Lights, Timer, Gate if available)
+2. Enable Session Mode for multiple heats
+3. Enable Distance Tracking
+4. Verify UCI random start enabled (default)
+5. Log all sessions for verification</p>
+<p><strong>Logged data includes:</strong>
+- Exact random delay used
+- Timestamp of gate drop
+- All device synchronization data
+- Proof of UCI compliance</p>
+<hr />
+<h2 id="advanced-troubleshooting-optimization">Advanced Troubleshooting &amp; Optimization</h2>
+<h3 id="performance-tuning">Performance Tuning</h3>
+<p><strong>Maximizing IMU accuracy:</strong>
+1. Tight mounting - zero movement when bike shaken
+2. Arrow pointing forward (critical)
+3. Monthly calibration
+4. Firmware updates</p>
+<p><strong>Optimizing wireless sync:</strong>
+1. Devices within 50m during operation
+2. Line of sight when possible
+3. Fresh batteries in all units
+4. Run RESET before each session (latency compensation)</p>
+<h3 id="data-quality-checks">Data Quality Checks</h3>
+<p><strong>Signs of good data:</strong>
+- Smooth acceleration curve (no spikes)
+- Reaction time 0.15-0.60s (reasonable range)
+- Max G-force 1.0-2.5G (typical for BMX)
+- Pitch stable during run (±5° variation)</p>
+<p><strong>Signs of bad data (check mounting):</strong>
+- Jagged acceleration curve
+- Reaction time &lt;0.10s or &gt;1.0s
+- Max G-force &lt;0.5G or &gt;3.5G
+- Pitch swinging wildly (±20°+)</p>
+<h3 id="session-strategy">Session Strategy</h3>
+<p><strong>For best comparative results:</strong>
+1. Same distance for all runs
+2. Consistent rest periods between runs
+3. Similar conditions (wind, temperature)
+4. Track any technique changes
+5. Note fatigue effects in later runs</p>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><strong><a href="../settings/">Settings Guide</a></strong> - Configure all system options</li>
+<li><strong><a href="../external-devices/">External Devices</a></strong> - Setup lights and timer</li>
+<li><strong><a href="../operation/">Basic Operation</a></strong> - Core features and modes</li>
+<li><strong><a href="../troubleshooting/">Troubleshooting</a></strong> - Fix issues and optimize</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>

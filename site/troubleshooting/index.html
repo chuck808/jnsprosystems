@@ -1,0 +1,2116 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://appgatepro.github.io/docs/troubleshooting/">
+      
+      
+        <link rel="prev" href="../settings/">
+      
+      
+        <link rel="next" href="../faq/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Troubleshooting - AppGatePro Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#troubleshooting" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AppGatePro Documentation" class="md-header__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AppGatePro Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Troubleshooting
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quickstart/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../external-devices/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  External Devices
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../operation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Basic Operation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Advanced Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../settings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Settings Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AppGatePro Documentation" class="md-nav__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AppGatePro Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-devices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Diagnostics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-charging-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power &amp; Charging Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power &amp; Charging Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-wont-power-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Won't Power On
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-powers-off-randomly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Powers Off Randomly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wont-charge-charging-slowly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Won't Charge / Charging Slowly
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-accuracy-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor &amp; Accuracy Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensor &amp; Accuracy Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inaccurate-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inaccurate Measurements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-data-recording" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No Data Recording
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imu-error-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "IMU Error" Message
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote-control-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Control Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote Control Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remote-not-triggering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Not Triggering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-remotes-interfering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Remotes Interfering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-display-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen &amp; Display Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Screen &amp; Display Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#screen-not-responding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen Not Responding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-too-dim-too-bright" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen Too Dim / Too Bright
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-shows-wrong-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display Shows Wrong Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-connectivity-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WiFi &amp; Connectivity Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WiFi &amp; Connectivity Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wont-connect-to-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Won't Connect to WiFi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-sync-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Sync Not Working
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-storage-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data &amp; Storage Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data &amp; Storage Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-full-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Storage Full" Warning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lost-data-missing-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lost Data / Missing Runs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Messages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uci-compliance-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "UCI Compliance Failed"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Calibration Required"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperature-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Temperature Warning"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slow-laggy-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slow / Laggy Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-drains-too-fast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Drains Too Fast
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#still-having-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Still Having Issues?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Still Having Issues?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-contacting-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before Contacting Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contact Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warranty-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warranty Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAQ
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-diagnostics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Diagnostics
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power-charging-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power &amp; Charging Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Power &amp; Charging Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-wont-power-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Won't Power On
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#device-powers-off-randomly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Powers Off Randomly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wont-charge-charging-slowly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Won't Charge / Charging Slowly
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sensor-accuracy-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sensor &amp; Accuracy Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Sensor &amp; Accuracy Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inaccurate-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inaccurate Measurements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#no-data-recording" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        No Data Recording
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#imu-error-message" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "IMU Error" Message
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remote-control-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Control Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Remote Control Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#remote-not-triggering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remote Not Triggering
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-remotes-interfering" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Remotes Interfering
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screen-display-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen &amp; Display Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Screen &amp; Display Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#screen-not-responding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen Not Responding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#screen-too-dim-too-bright" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screen Too Dim / Too Bright
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#display-shows-wrong-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Display Shows Wrong Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wifi-connectivity-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        WiFi &amp; Connectivity Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="WiFi &amp; Connectivity Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wont-connect-to-wifi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Won't Connect to WiFi
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-sync-not-working" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud Sync Not Working
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-storage-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data &amp; Storage Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data &amp; Storage Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#storage-full-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Storage Full" Warning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lost-data-missing-runs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lost Data / Missing Runs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#error-messages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Error Messages
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Error Messages">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#uci-compliance-failed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "UCI Compliance Failed"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calibration-required" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Calibration Required"
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#temperature-warning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        "Temperature Warning"
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#slow-laggy-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slow / Laggy Interface
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-drains-too-fast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Drains Too Fast
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#still-having-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Still Having Issues?
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Still Having Issues?">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#before-contacting-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before Contacting Support
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contact-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contact Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#warranty-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Warranty Information
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FAQ
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="troubleshooting">Troubleshooting</h1>
+<p>Common issues and solutions for AppGatePro system.</p>
+<h2 id="quick-diagnostics">Quick Diagnostics</h2>
+<p>Before diving into specific issues, run the built-in diagnostic:</p>
+<ol>
+<li>Navigate: <strong>Settings → System → Diagnostics</strong></li>
+<li>System tests:</li>
+<li>Battery health</li>
+<li>IMU sensors</li>
+<li>Screen response</li>
+<li>Storage space</li>
+<li>WiFi connectivity</li>
+<li>Review results for any ❌ failures</li>
+</ol>
+<h2 id="power-charging-issues">Power &amp; Charging Issues</h2>
+<h3 id="device-wont-power-on">Device Won't Power On</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: No response when pressing power button</p>
+</div>
+<p><strong>Try these steps in order:</strong></p>
+<ol>
+<li><strong>Hold power button longer</strong> - Must hold for full 2 seconds</li>
+<li><strong>Check charge</strong> - Connect USB-C cable, look for charging LED</li>
+<li><strong>Try different cable/charger</strong> - Use known-good USB-C cable and 5V adapter</li>
+<li><strong>Hard reset</strong> - Hold power button for 10 seconds, release, try powering on</li>
+<li><strong>Battery depleted</strong> - Leave on charger for 30 minutes, then try again</li>
+</ol>
+<p><strong>Still not working?</strong> Contact support with LED behavior description.</p>
+<h3 id="device-powers-off-randomly">Device Powers Off Randomly</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Shuts down during use</p>
+</div>
+<p><strong>Most common causes:</strong></p>
+<ol>
+<li><strong>Low battery</strong> - Check battery icon. Charge if below 20%</li>
+<li><strong>Loose USB connection</strong> - If mounted, ensure USB isn't pulling on port</li>
+<li><strong>Overheating</strong> - Rare, but device will shutdown if &gt;60°C</li>
+<li>Let cool for 10 minutes</li>
+<li>Ensure mounting allows air circulation</li>
+<li><strong>Firmware crash</strong> - Check: Settings → System → Crash Logs</li>
+<li>Update firmware if available</li>
+</ol>
+<h3 id="wont-charge-charging-slowly">Won't Charge / Charging Slowly</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: LED not turning red, or charges very slowly</p>
+</div>
+<p><strong>Check these:</strong></p>
+<ol>
+<li><strong>Cable quality</strong> - Use provided USB-C cable or high-quality replacement</li>
+<li><strong>Power source</strong> - Must be 5V, 1A minimum. USB 2.0 may be too slow</li>
+<li><strong>Port cleanliness</strong> - Inspect USB-C port for lint/debris. Clean gently with toothpick</li>
+<li><strong>Temperature</strong> - Device won't charge if &lt;0°C or &gt;45°C</li>
+<li><strong>Battery health</strong> - Settings → System → Battery Info</li>
+<li>If "Health: Poor", battery may need replacement</li>
+</ol>
+<p><strong>Charge time expectations:</strong> 0-100% should take 90-120 minutes</p>
+<h2 id="sensor-accuracy-issues">Sensor &amp; Accuracy Issues</h2>
+<h3 id="inaccurate-measurements">Inaccurate Measurements</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Speed/power readings seem wrong</p>
+</div>
+<p><strong>Calibration checklist:</strong></p>
+<ol>
+<li>
+<p><strong>Verify orientation</strong> - Arrow MUST point forward
+   <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Correct:  [→ CoreS3] ====&gt; (front of bike)
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>Wrong:    [← CoreS3] ====&gt; (front of bike)
+</code></pre></div></p>
+</li>
+<li>
+<p><strong>Check mounting</strong> - Shake bike, CoreS3 should not move at all</p>
+</li>
+<li>If loose, tighten velcro strap</li>
+<li>
+<p>Consider zip-tie backup</p>
+</li>
+<li>
+<p><strong>Recalibrate IMU</strong></p>
+</li>
+<li>Settings → Sensors → Calibrate IMU</li>
+<li>Must be on flat surface</li>
+<li>
+<p>Don't move for full 10 seconds</p>
+</li>
+<li>
+<p><strong>Verify tire diameter</strong> - Settings → Bike → Tire Diameter</p>
+</li>
+<li>Wrong tire size = wrong speed calculations</li>
+<li>
+<p>Measure: Roll bike one complete rotation, measure distance</p>
+</li>
+<li>
+<p><strong>Update firmware</strong> - Old firmware may have sensor bugs</p>
+</li>
+</ol>
+<h3 id="no-data-recording">No Data Recording</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Timer runs but no data saved</p>
+</div>
+<ol>
+<li><strong>Check storage space</strong> - Settings → Data → Storage</li>
+<li>If &lt;5% free, delete old sessions</li>
+<li><strong>Verify sensors</strong> - Run diagnostic test (Settings → System → Diagnostics)</li>
+<li><strong>IMU failure</strong> - If diagnostic shows IMU error:</li>
+<li>Power cycle device</li>
+<li>Recalibrate IMU</li>
+<li>If persists, contact support</li>
+</ol>
+<h3 id="imu-error-message">"IMU Error" Message</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Error message on startup or during use</p>
+</div>
+<p><strong>Step-by-step fix:</strong></p>
+<ol>
+<li>Remove CoreS3 from bike</li>
+<li>Place on flat, stable surface</li>
+<li>Power off completely (hold power 5 seconds)</li>
+<li>Wait 10 seconds</li>
+<li>Power on</li>
+<li>Immediately: Settings → Sensors → Calibrate IMU</li>
+<li>Keep perfectly still during calibration</li>
+</ol>
+<p><strong>If error persists:</strong></p>
+<ul>
+<li>Firmware update may be needed</li>
+<li>Check for physical damage to device</li>
+<li>Contact support - may be hardware issue</li>
+</ul>
+<h2 id="remote-control-issues">Remote Control Issues</h2>
+<h3 id="remote-not-triggering">Remote Not Triggering</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Pressing remote button doesn't trigger beep</p>
+</div>
+<p><strong>Troubleshooting steps:</strong></p>
+<ol>
+<li><strong>Check pairing</strong> - Settings → Remote → Status</li>
+<li>Should show "Remote #XXXX: Connected"</li>
+<li>
+<p>If "No remote paired", need to pair</p>
+</li>
+<li>
+<p><strong>Test remote battery</strong></p>
+</li>
+<li>Press button away from CoreS3</li>
+<li>LED should flash bright green</li>
+<li>Dim or no flash = dead battery</li>
+<li>
+<p>Replace with CR2032 coin cell</p>
+</li>
+<li>
+<p><strong>Check range</strong> - Must be within 100m</p>
+</li>
+<li>
+<p>Test closer (5m) to eliminate range issues</p>
+</li>
+<li>
+<p><strong>Re-pair remote</strong></p>
+</li>
+<li>Settings → Remote → Remove Device</li>
+<li>Then: Add Device</li>
+<li>Hold remote button 3 seconds until LED flashes rapidly</li>
+<li>
+<p>Confirm pairing</p>
+</li>
+<li>
+<p><strong>Interference check</strong></p>
+</li>
+<li>Large metal objects can block signal</li>
+<li>Try from different location</li>
+</ol>
+<h3 id="multiple-remotes-interfering">Multiple Remotes Interfering</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Other riders' remotes triggering your device</p>
+</div>
+<p><strong>Solution:</strong></p>
+<ul>
+<li>Each CoreS3 can pair with specific remotes only</li>
+<li>Other remotes should NOT trigger your device</li>
+<li>If they do:</li>
+<li>Settings → Remote → Remove All Devices</li>
+<li>Re-pair only your remote(s)</li>
+<li>Verify: Settings → Remote → Show Paired Devices</li>
+</ul>
+<h2 id="screen-display-issues">Screen &amp; Display Issues</h2>
+<h3 id="screen-not-responding">Screen Not Responding</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Touch screen doesn't respond to taps</p>
+</div>
+<ol>
+<li><strong>Clean screen</strong> - Use microfiber cloth (included)</li>
+<li><strong>Remove screen protector</strong> - If installed, remove and test</li>
+<li><strong>Check for moisture</strong> - Dry completely if damp</li>
+<li><strong>Calibrate touch</strong> - Settings → Display → Calibrate Touch</li>
+<li><strong>Hard reset</strong> - Hold power 10 seconds, restart</li>
+</ol>
+<h3 id="screen-too-dim-too-bright">Screen Too Dim / Too Bright</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Can't see screen in sunlight or too bright at night</p>
+</div>
+<p><strong>Adjust brightness:</strong></p>
+<ul>
+<li>Settings → Display → Brightness</li>
+<li>Options: Auto / Low / Medium / High</li>
+<li>Auto uses light sensor for optimal brightness</li>
+</ul>
+<p><strong>Sunlight visibility:</strong></p>
+<ul>
+<li>Use maximum brightness</li>
+<li>Shield screen with hand temporarily</li>
+<li>Consider matte screen protector (reduces glare)</li>
+</ul>
+<h3 id="display-shows-wrong-information">Display Shows Wrong Information</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Garbled text, incorrect metrics</p>
+</div>
+<ol>
+<li><strong>Soft reset</strong> - Settings → System → Reboot</li>
+<li><strong>Factory reset display</strong> - Settings → Display → Reset</li>
+<li>Note: Does NOT delete your data</li>
+<li><strong>Firmware update</strong> - Check for available updates</li>
+</ol>
+<h2 id="wifi-connectivity-issues">WiFi &amp; Connectivity Issues</h2>
+<h3 id="wont-connect-to-wifi">Won't Connect to WiFi</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Can't connect to home/track WiFi</p>
+</div>
+<p><strong>Common solutions:</strong></p>
+<ol>
+<li><strong>Verify password</strong> - Settings → WiFi → Configure</li>
+<li>Re-enter password carefully</li>
+<li>
+<p>Check for caps lock/special characters</p>
+</li>
+<li>
+<p><strong>WiFi band</strong> - CoreS3 supports 2.4GHz only</p>
+</li>
+<li>If your router is 5GHz only, CoreS3 won't connect</li>
+<li>
+<p>Enable 2.4GHz band in router settings</p>
+</li>
+<li>
+<p><strong>Signal strength</strong> - Move closer to router</p>
+</li>
+<li>
+<p>Need at least 2 bars for stable connection</p>
+</li>
+<li>
+<p><strong>Router compatibility</strong></p>
+</li>
+<li>Some public/track WiFi require web login</li>
+<li>These won't work with CoreS3</li>
+<li>
+<p>Use mobile hotspot instead</p>
+</li>
+<li>
+<p><strong>Forget and reconnect</strong></p>
+</li>
+<li>Settings → WiFi → Forget Network</li>
+<li>Scan and connect again</li>
+</ol>
+<h3 id="cloud-sync-not-working">Cloud Sync Not Working</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Sessions not appearing on web dashboard</p>
+</div>
+<p><strong>Check these:</strong></p>
+<ol>
+<li><strong>WiFi connected?</strong> - Must be online for sync</li>
+<li><strong>Auto-upload enabled?</strong> - Settings → Cloud → Auto-Upload</li>
+<li><strong>Manual sync</strong> - Settings → Cloud → Sync Now</li>
+<li><strong>Account linked?</strong> - Settings → Cloud → Account</li>
+<li>Must sign in to dashboard first</li>
+<li>Then link device using QR code</li>
+</ol>
+<p><strong>Sync status indicators:</strong></p>
+<ul>
+<li>☁ = Synced</li>
+<li>☁↑ = Uploading</li>
+<li>☁✗ = Sync error (check internet)</li>
+</ul>
+<h2 id="data-storage-issues">Data &amp; Storage Issues</h2>
+<h3 id="storage-full-warning">"Storage Full" Warning</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Device warns storage is full</p>
+</div>
+<p><strong>Free up space:</strong></p>
+<ol>
+<li><strong>Delete old sessions</strong> - Settings → Data → Manage Storage</li>
+<li>Select sessions to delete</li>
+<li>
+<p>Tip: Export to USB first if needed</p>
+</li>
+<li>
+<p><strong>Clear cache</strong> - Settings → Data → Clear Cache</p>
+</li>
+<li>Removes temporary files</li>
+<li>
+<p>Does NOT delete your sessions</p>
+</li>
+<li>
+<p><strong>Upload to cloud</strong> - Settings → Cloud → Sync All</p>
+</li>
+<li>Once uploaded, can safely delete local copies</li>
+</ol>
+<p><strong>Storage capacity:</strong> ~500 sessions or 40,000 individual runs</p>
+<h3 id="lost-data-missing-runs">Lost Data / Missing Runs</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Past sessions disappeared</p>
+</div>
+<p><strong>Recovery options:</strong></p>
+<ol>
+<li><strong>Check cloud</strong> - Login to dashboard.appgatepro.com</li>
+<li>
+<p>Data may be safe in cloud even if deleted locally</p>
+</li>
+<li>
+<p><strong>Check USB backup</strong> - If you've exported before</p>
+</li>
+<li>
+<p>Data can be re-imported from CSV files</p>
+</li>
+<li>
+<p><strong>Recent deletions</strong> - Settings → Data → Recently Deleted</p>
+</li>
+<li>Undelete sessions within 30 days</li>
+</ol>
+<p><strong>Prevention:</strong></p>
+<ul>
+<li>Enable cloud auto-upload (Settings → Cloud)</li>
+<li>Regular USB exports (weekly recommended)</li>
+<li>Don't use "Delete All" unless certain</li>
+</ul>
+<h2 id="error-messages">Error Messages</h2>
+<h3 id="uci-compliance-failed">"UCI Compliance Failed"</h3>
+<div class="admonition warning">
+<p class="admonition-title">Meaning: Random delay validation failed</p>
+</div>
+<p><strong>This is rare. Causes:</strong></p>
+<ul>
+<li>Firmware bug (update firmware)</li>
+<li>IMU timing drift (recalibrate IMU)</li>
+<li>System clock error (sync with WiFi)</li>
+</ul>
+<p><strong>If persistent, contact support</strong> - this may indicate hardware issue</p>
+<h3 id="calibration-required">"Calibration Required"</h3>
+<div class="admonition info">
+<p class="admonition-title">Meaning: IMU needs recalibration</p>
+</div>
+<p><strong>When this appears:</strong></p>
+<ul>
+<li>After firmware update</li>
+<li>After physical impact/drop</li>
+<li>If device hasn't been calibrated in 30+ days</li>
+</ul>
+<p><strong>Solution:</strong> Settings → Sensors → Calibrate IMU</p>
+<h3 id="temperature-warning">"Temperature Warning"</h3>
+<div class="admonition warning">
+<p class="admonition-title">Meaning: Device too hot or too cold</p>
+</div>
+<p><strong>Safe operating range:</strong> 0°C to 45°C (32°F to 113°F)</p>
+<ul>
+<li><strong>Too hot</strong>: Let cool in shade for 10 minutes</li>
+<li><strong>Too cold</strong>: Warm in pocket before use</li>
+</ul>
+<h2 id="performance-issues">Performance Issues</h2>
+<h3 id="slow-laggy-interface">Slow / Laggy Interface</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Menu navigation is slow</p>
+</div>
+<p><strong>Improvements:</strong></p>
+<ol>
+<li><strong>Close background tasks</strong> - Settings → System → Running Apps</li>
+<li><strong>Clear cache</strong> - Settings → Data → Clear Cache</li>
+<li><strong>Reduce screen effects</strong> - Settings → Display → Animations: Off</li>
+<li><strong>Storage space</strong> - Ensure &gt;20% free space</li>
+<li><strong>Restart device</strong> - Often fixes temporary slowness</li>
+</ol>
+<h3 id="battery-drains-too-fast">Battery Drains Too Fast</h3>
+<div class="admonition question">
+<p class="admonition-title">Symptom: Battery doesn't last as long as expected</p>
+</div>
+<p><strong>Optimize battery life:</strong></p>
+<ol>
+<li><strong>Disable WiFi</strong> when not needed</li>
+<li>Quick toggle: Swipe down → WiFi icon</li>
+<li>
+<p>Saves ~40% battery</p>
+</li>
+<li>
+<p><strong>Lower brightness</strong> - Settings → Display → Brightness: Low or Auto</p>
+</li>
+<li>
+<p><strong>Enable auto-sleep</strong> - Settings → Display → Sleep: 2 minutes</p>
+</li>
+<li>
+<p><strong>Check battery health</strong> - Settings → System → Battery Info</p>
+</li>
+<li>
+<p>If health &lt;70%, battery may need replacement</p>
+</li>
+<li>
+<p><strong>Close unused apps</strong> - Settings → System → Running Apps</p>
+</li>
+</ol>
+<p><strong>Expected battery life:</strong></p>
+<ul>
+<li>Gate timing (WiFi off): 5-6 hours</li>
+<li>With WiFi on: 3-4 hours</li>
+<li>Standby: 30+ days</li>
+</ul>
+<h2 id="still-having-issues">Still Having Issues?</h2>
+<h3 id="before-contacting-support">Before Contacting Support</h3>
+<p>Run through this checklist:</p>
+<ul>
+<li>[ ] Firmware updated to latest version?</li>
+<li>[ ] IMU calibrated recently?</li>
+<li>[ ] Tried hard reset (power off, wait 30 seconds, power on)?</li>
+<li>[ ] Checked diagnostic results?</li>
+<li>[ ] Searched FAQ page?</li>
+</ul>
+<h3 id="contact-information">Contact Information</h3>
+<p><strong>Email Support:</strong> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d9aaaca9a9b6abad99b8a9a9beb8adbca9abb6f7bab6b4">[email&#160;protected]</a></p>
+<p><strong>Include in your message:</strong></p>
+<ol>
+<li>Device serial number (Settings → System → About)</li>
+<li>Firmware version</li>
+<li>Detailed description of issue</li>
+<li>Steps you've already tried</li>
+<li>Any error messages (screenshot if possible)</li>
+</ol>
+<p><strong>Response time:</strong> Usually within 24 hours weekdays</p>
+<h3 id="warranty-information">Warranty Information</h3>
+<ul>
+<li><strong>Standard warranty:</strong> 12 months from purchase</li>
+<li><strong>Covers:</strong> Manufacturing defects, hardware failure</li>
+<li><strong>Does NOT cover:</strong> Drops, water damage, normal battery wear</li>
+</ul>
+<p><strong>RMA Process:</strong></p>
+<ol>
+<li>Email support with issue description</li>
+<li>Diagnostic steps provided</li>
+<li>If faulty, RMA number issued</li>
+<li>Ship device with RMA number</li>
+<li>Replacement/repair within 7-10 business days</li>
+</ol>
+<hr />
+<h2 id="faq">FAQ</h2>
+<p><strong>Q: How often should I calibrate the IMU?</strong><br />
+A: Monthly is recommended, or whenever you notice accuracy issues.</p>
+<p><strong>Q: Can I use while charging?</strong><br />
+A: Yes, but cable may interfere with mounting. Best to charge between sessions.</p>
+<p><strong>Q: What happens if I drop the device?</strong><br />
+A: CoreS3 is built tough but not indestructible. After any impact, recalibrate IMU and run diagnostics.</p>
+<p><strong>Q: Why does my remote need to be close sometimes?</strong><br />
+A: Check remote battery. Weak battery = reduced range (normal is 100m+).</p>
+<p><strong>Q: Can I share data with my coach?</strong><br />
+A: Yes! Use cloud sharing: Dashboard → Session → Share → Enter coach email.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to sta

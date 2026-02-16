@@ -1,0 +1,2284 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://appgatepro.github.io/docs/external-devices/">
+      
+      
+        <link rel="prev" href="../hardware/">
+      
+      
+        <link rel="next" href="../operation/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>External Devices - AppGatePro Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#external-devices-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AppGatePro Documentation" class="md-header__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AppGatePro Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              External Devices
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quickstart/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  External Devices
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../operation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Basic Operation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Advanced Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../settings/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Settings Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../troubleshooting/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AppGatePro Documentation" class="md-nav__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AppGatePro Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Devices
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-included" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Included
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-setup-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initial Setup Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jns_lights-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Lights Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JNS_Lights Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-jns_lights-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What JNS_Lights Does
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pairing-jns_lights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pairing JNS_Lights
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-jns_lights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing JNS_Lights
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jns_lights-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Lights Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jns_timing-setup-breakbeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Timing Setup (Breakbeam)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JNS_Timing Setup (Breakbeam)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-jns_timing-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What JNS_Timing Does
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-setup_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pairing-jns_timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pairing JNS_Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-jns_timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing JNS_Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jns_timing-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Timing Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-devices-in-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enabling Devices in Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-system-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding System Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latency-compensation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latency Compensation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-system-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete System Test
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complete System Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-session-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Session Checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-your-first-full-system-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Your First Full System Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-success-looks-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Success Looks Like
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizing-your-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimizing Your Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimizing Your Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-layout-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track Layout Recommendations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weather-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weather Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-rider-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Rider Sessions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Rider Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-device-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Device Sharing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coachparent-viewing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coach/Parent Viewing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maintenance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weekly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monthly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monthly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-competitionimportant-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before Competition/Important Sessions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-status-leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Status LEDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireless-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wireless Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#whats-included" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What's Included
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-architecture" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Architecture
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#initial-setup-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Initial Setup Checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jns_lights-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Lights Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JNS_Lights Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-jns_lights-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What JNS_Lights Does
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pairing-jns_lights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pairing JNS_Lights
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-jns_lights" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing JNS_Lights
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jns_lights-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Lights Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jns_timing-setup-breakbeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Timing Setup (Breakbeam)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="JNS_Timing Setup (Breakbeam)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-jns_timing-does" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What JNS_Timing Does
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#physical-setup_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Physical Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pairing-jns_timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pairing JNS_Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-distance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring Distance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#testing-jns_timing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing JNS_Timing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#jns_timing-troubleshooting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        JNS_Timing Troubleshooting
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enabling-devices-in-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enabling Devices in Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-system-behavior" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding System Behavior
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#latency-compensation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latency Compensation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complete-system-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Complete System Test
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Complete System Test">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pre-session-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pre-Session Checklist
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#running-your-first-full-system-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Running Your First Full System Test
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-success-looks-like" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Success Looks Like
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#optimizing-your-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Optimizing Your Setup
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Optimizing Your Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-layout-recommendations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Track Layout Recommendations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Management
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#weather-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weather Considerations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#multiple-rider-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multiple Rider Sessions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Multiple Rider Sessions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-device-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Device Sharing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coachparent-viewing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coach/Parent Viewing
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Maintenance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#weekly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Weekly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monthly" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monthly
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#before-competitionimportant-sessions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Before Competition/Important Sessions
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-status-leds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Status LEDs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wireless-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Wireless Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="external-devices-setup">External Devices Setup</h1>
+<p>Your AppGatePro system includes wireless external devices for professional-grade timing. This guide covers pairing, positioning, and configuring your lights and breakbeam timer.</p>
+<h2 id="whats-included">What's Included</h2>
+<p>Your system comes with:</p>
+<ul>
+<li><strong>JNS_Lights</strong> - Professional start light system for visual timing cues</li>
+<li><strong>JNS_Timing</strong> - Breakbeam timer for precise finish line detection</li>
+<li><strong>CoreS3 Main Unit</strong> - Central controller with built-in IMU sensors</li>
+</ul>
+<p>These devices communicate wirelessly using ESP-NOW protocol for ultra-low latency (typically &lt;10ms).</p>
+<hr />
+<h2 id="system-architecture">System Architecture</h2>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌─────────────────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│   CoreS3 Unit   │ ──wireless──&gt; ┌──────────────┐
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│  (on your bike) │                │  JNS_Lights  │
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>└─────────────────┘                └──────────────┘
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>         │                         (at start line)
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>         │
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>         │ wireless
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>         ▼
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>┌─────────────────┐
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>│   JNS_Timing    │
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>│  (breakbeam at  │
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>│   finish line)  │
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>└─────────────────┘
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Range and Positioning</p>
+<p>All devices use 2.4GHz wireless with typical range of 50-100m outdoors. Position devices within line of sight when possible for best reliability.</p>
+</div>
+<hr />
+<h2 id="initial-setup-checklist">Initial Setup Checklist</h2>
+<p>Before your first session, complete these steps:</p>
+<ul>
+<li>[ ] Charge all devices fully</li>
+<li>[ ] Pair JNS_Lights to CoreS3</li>
+<li>[ ] Pair JNS_Timing to CoreS3</li>
+<li>[ ] Position lights at start line</li>
+<li>[ ] Set up breakbeam at finish line</li>
+<li>[ ] Verify wireless connectivity</li>
+<li>[ ] Run a test session</li>
+</ul>
+<hr />
+<h2 id="jns_lights-setup">JNS_Lights Setup</h2>
+<h3 id="what-jns_lights-does">What JNS_Lights Does</h3>
+<p>The JNS_Lights unit displays the UCI-compliant start sequence visually:
+- Four warning lights (illuminating in sequence)
+- Final "gate drop" indication
+- Synchronized with CoreS3 audio beeps
+- Latency compensation for perfect timing</p>
+<h3 id="physical-setup">Physical Setup</h3>
+<p><strong>1. Positioning the Lights</strong></p>
+<p>Place JNS_Lights at the start line where all riders can clearly see it:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>        Riders
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>          ▼
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    ┌─────────────┐
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>    │             │
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>    │  [Lights]   │  ← Mount at eye level
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>    │             │     when on bike
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>    └─────────────┘
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>         Gate
+</code></pre></div>
+<ul>
+<li><strong>Height:</strong> Approximately 1.5-2m (rider eye level when seated)</li>
+<li><strong>Distance:</strong> 2-3m in front of gate position</li>
+<li><strong>Visibility:</strong> Ensure no obstructions</li>
+<li><strong>Power:</strong> Connect to included power supply or battery pack</li>
+</ul>
+<p><strong>2. Powering On</strong></p>
+<ol>
+<li>Connect power cable to JNS_Lights unit</li>
+<li>Power switch on back of unit</li>
+<li>Status LED should illuminate (solid blue = ready)</li>
+<li>Unit enters pairing mode automatically on first power-up</li>
+</ol>
+<h3 id="pairing-jns_lights">Pairing JNS_Lights</h3>
+<div class="admonition warning">
+<p class="admonition-title">Pair Before First Use</p>
+<p>Pairing must be completed before the lights will respond to timing commands.</p>
+</div>
+<p><strong>Step-by-step pairing:</strong></p>
+<ol>
+<li><strong>Power on JNS_Lights</strong> - Status LED flashes blue (pairing mode)</li>
+<li><strong>On CoreS3:</strong> Navigate to <strong>Settings → External Devices</strong></li>
+<li><strong>Tap the LIGHTS icon</strong> - It will begin searching</li>
+<li><strong>Wait for discovery</strong> - Takes 5-10 seconds</li>
+<li><strong>Confirm pairing</strong> - Tap "Pair" when device appears</li>
+<li><strong>Success indication:</strong></li>
+<li>LIGHTS icon glows green on CoreS3</li>
+<li>JNS_Lights status LED turns solid blue</li>
+<li>Test lights will flash briefly</li>
+</ol>
+<p><strong>If pairing fails:</strong>
+- Ensure JNS_Lights is within 10m during pairing
+- Restart JNS_Lights by power cycling
+- Clear previous pairings: Settings → External Devices → Reset Devices
+- Try pairing again</p>
+<h3 id="testing-jns_lights">Testing JNS_Lights</h3>
+<p>After pairing, test the connection:</p>
+<ol>
+<li><strong>From Settings page:</strong> Tap the LIGHTS icon to toggle it ON (green glow)</li>
+<li><strong>Return to main menu</strong> and select <strong>AppGatePro</strong></li>
+<li><strong>Tap RESET</strong> button</li>
+<li><strong>Watch JNS_Lights:</strong></li>
+<li>Should flash four times during warning sequence</li>
+<li>Synchronized with audio beeps from CoreS3</li>
+<li><strong>Tap START</strong> to run full sequence</li>
+<li><strong>Lights should illuminate</strong> in sequence with perfect timing</li>
+</ol>
+<div class="admonition success">
+<p class="admonition-title">What Good Synchronization Looks Like</p>
+<p>Lights should illuminate within 10-20ms of the CoreS3 beep. Any person watching should perceive them as simultaneous.</p>
+</div>
+<h3 id="jns_lights-troubleshooting">JNS_Lights Troubleshooting</h3>
+<p><strong>Lights don't respond during sequence:</strong>
+- Check LIGHTS toggle is ON in Settings (green glow)
+- Verify status LED on JNS_Lights is solid blue
+- Re-pair the device if LED is flashing
+- Check battery/power supply</p>
+<p><strong>Lights are delayed or out of sync:</strong>
+- CoreS3 measures and compensates for latency automatically
+- If sync is consistently off by &gt;50ms, check for wireless interference
+- Keep devices within 50m during operation
+- Ensure line of sight between CoreS3 and JNS_Lights</p>
+<p><strong>Status LED meanings:</strong>
+- <strong>Solid Blue:</strong> Paired and ready
+- <strong>Flashing Blue:</strong> Pairing mode / not paired
+- <strong>Red Flash:</strong> Low battery or power issue
+- <strong>Off:</strong> No power</p>
+<hr />
+<h2 id="jns_timing-setup-breakbeam">JNS_Timing Setup (Breakbeam)</h2>
+<h3 id="what-jns_timing-does">What JNS_Timing Does</h3>
+<p>The JNS_Timing unit provides precise finish line detection:
+- Infrared breakbeam sensor
+- Detects when rider crosses finish line
+- Sends timing data back to CoreS3 wirelessly
+- Calculates speed based on distance and time
+- Accuracy: ±1ms</p>
+<h3 id="physical-setup_1">Physical Setup</h3>
+<p><strong>1. Understanding the Breakbeam System</strong></p>
+<p>The breakbeam consists of two units:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    [Transmitter]                [Receiver]
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>         │                            │
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>         │    Invisible IR Beam       │
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>         │ ════════════════════════&gt; │
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>         │                            │
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    (One side                    (Other side
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>     of track)                    of track)
+</code></pre></div>
+<ul>
+<li><strong>Transmitter:</strong> Emits infrared beam</li>
+<li><strong>Receiver:</strong> Detects beam, connected to JNS_Timing controller</li>
+<li><strong>When broken:</strong> Controller sends "STOP" signal to CoreS3</li>
+</ul>
+<p><strong>2. Positioning the Breakbeam</strong></p>
+<p>Set up at your desired finish line distance:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Start Line                                    Finish Line
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    ║                                              ▼
+<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    ║                                    [TX]═══════[RX]
+<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>    ║                                     ↑         ↑
+<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>    ║&lt;─────── Track Distance ────────&gt;│ Beam at wheel height
+<a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>    ║        (10m, 20m, etc.)          │
+</code></pre></div>
+<p><strong>Positioning guidelines:</strong></p>
+<ul>
+<li><strong>Height:</strong> 30-40cm above ground (wheel axle height)</li>
+<li><strong>Beam width:</strong> Ensure full track width is covered</li>
+<li><strong>Alignment:</strong> Transmitter and receiver must face each other directly</li>
+<li><strong>Distance:</strong> Can span 0.5m to 10m across track</li>
+<li><strong>Stability:</strong> Mount on tripods or stable stands</li>
+</ul>
+<p><strong>Common distances:</strong>
+- <strong>Sprint training:</strong> 10m or 20m from start
+- <strong>Full straight:</strong> 50m or more
+- <strong>Club practice:</strong> 30m typical</p>
+<p><strong>3. Connecting the Components</strong></p>
+<ol>
+<li><strong>Plug transmitter</strong> into "TX" port on JNS_Timing controller</li>
+<li><strong>Plug receiver</strong> into "RX" port on JNS_Timing controller</li>
+<li><strong>Power on</strong> JNS_Timing controller</li>
+<li><strong>Verify beam:</strong> Status LED on receiver lights up when beam is intact</li>
+<li><strong>Test break:</strong> Wave hand through beam - LED should turn off</li>
+</ol>
+<h3 id="pairing-jns_timing">Pairing JNS_Timing</h3>
+<p><strong>Step-by-step pairing:</strong></p>
+<ol>
+<li><strong>Power on JNS_Timing controller</strong> - Status LED flashes green (pairing mode)</li>
+<li><strong>On CoreS3:</strong> Navigate to <strong>Settings → External Devices</strong></li>
+<li><strong>Tap the TIMER icon</strong> - Begin scanning</li>
+<li><strong>Wait for discovery</strong> - Takes 5-10 seconds</li>
+<li><strong>Confirm pairing</strong> - Select "Pair" when JNS_Timing appears</li>
+<li><strong>Success indication:</strong></li>
+<li>TIMER icon glows green on CoreS3</li>
+<li>JNS_Timing status LED turns solid green</li>
+<li>CoreS3 displays "External Timer Connected"</li>
+</ol>
+<h3 id="configuring-distance">Configuring Distance</h3>
+<div class="admonition important">
+<p class="admonition-title">Distance Setting Required</p>
+<p>For accurate speed calculations, you must tell the system the distance from start to finish line.</p>
+</div>
+<ol>
+<li><strong>Navigate to Settings</strong></li>
+<li><strong>Enable Distance toggle</strong> - Turns ON</li>
+<li><strong>Set Distance per Run</strong> - Choose from: 5m, 10m, 15m, 20m, 25m, 30m</li>
+<li><strong>Or enter custom:</strong> Scroll to "Custom" option and enter exact distance</li>
+</ol>
+<p>This distance is used to calculate: <strong>Speed = Distance ÷ Time</strong></p>
+<h3 id="testing-jns_timing">Testing JNS_Timing</h3>
+<p>After pairing and distance configuration:</p>
+<ol>
+<li><strong>Ensure TIMER is enabled</strong> in Settings (green glow)</li>
+<li><strong>Start a test run:</strong></li>
+<li>Navigate to AppGatePro</li>
+<li>Tap RESET, then START</li>
+<li>Run through start sequence</li>
+<li><strong>Cross the beam</strong> at finish line</li>
+<li><strong>Timing stops immediately</strong></li>
+<li><strong>Results display:</strong></li>
+<li>Elapsed time (precise to millisecond)</li>
+<li>Distance (as configured)</li>
+<li>Speed (calculated automatically)</li>
+</ol>
+<p><strong>Example result:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Time: 5.234 seconds
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Distance: 20 meters
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Speed: 3.82 m/s (13.75 km/h)
+</code></pre></div></p>
+<h3 id="jns_timing-troubleshooting">JNS_Timing Troubleshooting</h3>
+<p><strong>Beam won't establish (receiver LED off):</strong>
+- Check transmitter/receiver connections to controller
+- Verify power to JNS_Timing controller
+- Align transmitter and receiver - must be directly facing
+- Clean lenses on both transmitter and receiver
+- Check for obstructions in beam path</p>
+<p><strong>Timing doesn't stop when crossing beam:</strong>
+- Verify TIMER is enabled in Settings (green glow)
+- Check pairing status - re-pair if needed
+- Ensure CoreS3 is within wireless range (50m)
+- Check JNS_Timing controller battery/power
+- Review status LED on controller (should be solid green)</p>
+<p><strong>Inconsistent triggering / false triggers:</strong>
+- Beam may be too low (catching shadows or debris)
+- Sunlight interference - shield receiver from direct sun
+- Vibration causing alignment issues - secure mounting
+- Battery low - replace or recharge</p>
+<p><strong>Speed calculation is wrong:</strong>
+- Verify distance setting matches actual track distance
+- Measure distance accurately from gate position to beam
+- Check that beam is perpendicular to track (not angled)</p>
+<p><strong>Safety timeout (2 minute limit):</strong>
+- If beam doesn't break within 2 minutes, run auto-finishes
+- Speed will show as 0.00 m/s
+- Check beam alignment and retry</p>
+<p><strong>Status LED meanings:</strong>
+- <strong>Solid Green:</strong> Paired and ready, beam intact
+- <strong>Flashing Green:</strong> Pairing mode / not paired
+- <strong>Flashing Red:</strong> Beam broken (normal during detection)
+- <strong>Solid Red:</strong> Error state or low battery
+- <strong>Off:</strong> No power</p>
+<hr />
+<h2 id="system-integration">System Integration</h2>
+<h3 id="enabling-devices-in-settings">Enabling Devices in Settings</h3>
+<p>After pairing, you control which devices are active:</p>
+<p><strong>Settings → External Devices Section:</strong></p>
+<ol>
+<li><strong>LIGHTS</strong> - Tap to toggle ON (green glow) or OFF (gray)</li>
+<li><strong>TIMER</strong> - Tap to toggle ON (green glow) or OFF (gray)</li>
+<li><strong>GATE</strong> - Leave OFF (you don't have a physical gate)</li>
+</ol>
+<p><strong>Active device indicators:</strong>
+- <strong>Green glow</strong> = Device enabled and will be used
+- <strong>Gray/no glow</strong> = Device disabled, system runs standalone
+- <strong>Status text</strong> below each icon shows connection state</p>
+<h3 id="understanding-system-behavior">Understanding System Behavior</h3>
+<p><strong>With External Timer DISABLED:</strong>
+- System uses internal countdown timer
+- You set duration in Settings: "Sprint Time" (1-10 seconds)
+- Timer expires at configured time
+- Speed = 0.00 (no beam break measurement)</p>
+<p><strong>With External Timer ENABLED:</strong>
+- System ignores "Sprint Time" setting
+- Timer runs until beam break detected
+- Speed calculated automatically from distance/time
+- 2-minute safety timeout if no beam break</p>
+<h3 id="latency-compensation">Latency Compensation</h3>
+<p>The system automatically measures and compensates for wireless latency:</p>
+<p><strong>During RESET sequence:</strong>
+1. CoreS3 sends test signal to each device
+2. Measures round-trip time
+3. Stores latency values (typically 5-15ms)
+4. Adjusts trigger timing to compensate</p>
+<p><strong>Result:</strong> Lights and timing appear perfectly synchronized despite wireless transmission delays.</p>
+<p>You'll see this in action:
+- RESET sequence includes timing calibration
+- Lights flash in perfect sync with CoreS3 beeps
+- No manual adjustment needed</p>
+<hr />
+<h2 id="complete-system-test">Complete System Test</h2>
+<h3 id="pre-session-checklist">Pre-Session Checklist</h3>
+<p>Before each training session, verify:</p>
+<ul>
+<li>[ ] All devices powered on</li>
+<li>[ ] Status LEDs showing ready state (solid blue/green)</li>
+<li>[ ] LIGHTS and TIMER enabled in Settings (green glow)</li>
+<li>[ ] Distance configured correctly</li>
+<li>[ ] Breakbeam aligned and clear</li>
+<li>[ ] CoreS3 mounted securely on bike</li>
+</ul>
+<h3 id="running-your-first-full-system-test">Running Your First Full System Test</h3>
+<p><strong>1. Position Everything:</strong>
+- JNS_Lights at start line (visible to rider)
+- Breakbeam at finish line (configured distance)
+- CoreS3mounted on bike</p>
+<p><strong>2. Start Sequence:</strong>
+- On CoreS3: Navigate to <strong>AppGatePro</strong>
+- Tap <strong>RESET</strong> button
+- <strong>Watch/listen for:</strong>
+  - Audio warning sequence on CoreS3
+  - JNS_Lights flashing in sync
+  - "Gate Armed" state after sequence</p>
+<p><strong>3. Execute Test Run:</strong>
+- Tap <strong>START</strong> on CoreS3
+- <strong>Observe:</strong>
+  - "Random Start" announcement
+  - "Riders Ready - Watch the Gate"
+  - Random delay (0.1-2.7 seconds)
+  - Light sequence on JNS_Lights
+  - Four beeps + lights
+  - Final long beep (gate drop simulation)
+- <strong>Accelerate through course</strong>
+- <strong>Cross breakbeam at finish</strong></p>
+<p><strong>4. Verify Results:</strong>
+- Timing should stop immediately at beam break
+- Finish screen displays:
+  - Precise elapsed time
+  - Configured distance
+  - Calculated speed
+  - Reaction time (from IMU)
+  - Max G-force
+  - Complete acceleration graph</p>
+<p><strong>5. If Everything Works:</strong>
+- You're ready for training!
+- System is properly configured
+- All devices communicating correctly</p>
+<h3 id="what-success-looks-like">What Success Looks Like</h3>
+<p>✓ Lights flash in perfect sync with beeps<br />
+✓ Timing starts at gate drop<br />
+✓ Timing stops immediately when crossing beam<br />
+✓ Speed is calculated accurately<br />
+✓ No error messages or warnings<br />
+✓ All IMU data recorded properly  </p>
+<hr />
+<h2 id="optimizing-your-setup">Optimizing Your Setup</h2>
+<h3 id="track-layout-recommendations">Track Layout Recommendations</h3>
+<p><strong>For Sprint Training (10-20m):</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Start                    Finish
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>  ║                        ║
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>  ║ [Lights]              ║ [Beam]
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>  ║    │                  ║   │
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>  ║    ▼                  ║   ▼
+<a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>  ║  ═══&gt;  10-20m   ═══&gt;  ║
+</code></pre></div></p>
+<p><strong>For Longer Distances (30m+):</strong>
+- Ensure wireless range is adequate
+- Both devices should be within 50m of CoreS3
+- Line of sight helps but not required</p>
+<h3 id="battery-management">Battery Management</h3>
+<p><strong>Expected battery life:</strong>
+- <strong>JNS_Lights:</strong> 4-6 hours continuous use
+- <strong>JNS_Timing:</strong> 6-8 hours continuous use
+- <strong>CoreS3:</strong> 4-5 hours (with WiFi off)</p>
+<p><strong>Tips:</strong>
+- Charge all devices between sessions
+- Carry spare batteries for full-day training
+- JNS units show low battery warnings
+- Power off devices when not in use</p>
+<h3 id="weather-considerations">Weather Considerations</h3>
+<p><strong>All devices are splash-resistant but not waterproof:</strong></p>
+<ul>
+<li><strong>Light rain:</strong> Generally OK, protect from prolonged exposure</li>
+<li><strong>Heavy rain:</strong> Cover or shelter devices</li>
+<li><strong>Extreme cold:</strong> Battery life may decrease</li>
+<li><strong>Extreme heat:</strong> Keep out of direct sun when possible</li>
+</ul>
+<p><strong>Infrared beam in sunlight:</strong>
+- Direct sunlight can interfere with breakbeam
+- Shield receiver from direct sun if possible
+- Increase transmitter power (if adjustable on your model)</p>
+<hr />
+<h2 id="multiple-rider-sessions">Multiple Rider Sessions</h2>
+<h3 id="quick-device-sharing">Quick Device Sharing</h3>
+<p>The system supports rapid switching between riders:</p>
+<p><strong>Method 1 - Sequential (one at a time):</strong>
+1. Rider 1 completes run
+2. Results displayed on CoreS3
+3. After 25 seconds, auto-advances to ready
+4. Rider 2 starts next run
+5. All devices remain active and synced</p>
+<p><strong>Method 2 - Session Mode (batch tracking):</strong>
+1. Enable "Session Mode" in Settings
+2. Set "Gates per Session" (e.g., 5 for 5 riders)
+3. System counts down: 5/5 → 4/5 → 3/5 → 2/5 → 1/5
+4. After final run, save all data together
+5. Perfect for club training with rotation</p>
+<h3 id="coachparent-viewing">Coach/Parent Viewing</h3>
+<p>Use the web dashboard for remote monitoring:</p>
+<ol>
+<li><strong>Scan QR code</strong> in Settings with phone/tablet</li>
+<li><strong>Dashboard connects</strong> to CoreS3 WiFi</li>
+<li><strong>Live updates</strong> during each run:</li>
+<li>Current state (Armed, Timing, Finished)</li>
+<li>Real-time G-force graph</li>
+<li>Elapsed time</li>
+<li><strong>View results</strong> after each run</li>
+<li><strong>Compare sessions</strong> across multiple riders</li>
+</ol>
+<hr />
+<h2 id="maintenance">Maintenance</h2>
+<h3 id="weekly">Weekly</h3>
+<ul>
+<li>Wipe down device housings with dry cloth</li>
+<li>Check all cable connections</li>
+<li>Verify battery charge levels</li>
+<li>Test beam alignment</li>
+</ul>
+<h3 id="monthly">Monthly</h3>
+<ul>
+<li>Deep clean infrared lenses with lens cloth</li>
+<li>Verify wireless pairing still solid</li>
+<li>Check for firmware updates</li>
+<li>Inspect mounting hardware for wear</li>
+</ul>
+<h3 id="before-competitionimportant-sessions">Before Competition/Important Sessions</h3>
+<ul>
+<li>Full device test the day before</li>
+<li>Fresh batteries in all devices</li>
+<li>Spare cables and batteries packed</li>
+<li>Backup CoreS3 configuration to cloud</li>
+</ul>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<p>Now that your external devices are set up:</p>
+<ul>
+<li><strong><a href="../settings/">Settings Guide</a></strong> - Detailed walkthrough of all configuration options</li>
+<li><strong><a href="../advanced-features/">Advanced Features</a></strong> - Session mode, distance tracking, analytics</li>
+<li><strong><a href="../operation/">Basic Operation</a></strong> - Complete guide to all system features</li>
+<li><strong><a href="../troubleshooting/">Troubleshooting</a></strong> - Solutions for common issues</li>
+</ul>
+<hr />
+<h2 id="quick-reference">Quick Reference</h2>
+<h3 id="device-status-leds">Device Status LEDs</h3>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Solid Blue/Green</th>
+<th>Flashing Blue/Green</th>
+<th>Red</th>
+<th>Off</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>JNS_Lights</strong></td>
+<td>Paired &amp; Ready</td>
+<td>Pairing Mode</td>
+<td>Low Battery</td>
+<td>No Power</td>
+</tr>
+<tr>
+<td><strong>JNS_Timing</strong></td>
+<td>Paired &amp; Ready</td>
+<td>Pairing Mode</td>
+<td>Error/Low Batt</td>
+<td>No Power</td>
+</tr>
+</tbody>
+</table>
+<h3 id="wireless-range">Wireless Range</h3>
+<ul>
+<li><strong>Pairing range:</strong> 10m maximum</li>
+<li><strong>Operating range:</strong> 50-100m typical</li>
+<li><strong>Best performance:</strong> Line of sight</li>
+<li><strong>Through obstacles:</strong> 30-50m</li>
+</ul>
+<h3 id="common-settings">Common Settings</h3>
+<p><strong>Sprint training:</strong>
+- LIGHTS: ON
+- TIMER: ON
+- Distance: 20m
+- Session Mode: OFF</p>
+<p><strong>Multi-rider club session:</strong>
+- LIGHTS: ON
+- TIMER: ON
+- Session Mode: ON
+- Gates per Session: 5-10</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
