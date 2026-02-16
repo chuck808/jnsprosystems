@@ -1,5 +1,5 @@
 site_name: AppGatePro Documentation
-site_url: https://appgatepro.github.io/docs/
+site_url: https://chuck808.github.io/jnsprosystems/
 nav:
   - Home: index.md
   - Quick Start: quickstart.md
