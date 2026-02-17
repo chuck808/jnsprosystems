@@ -1,0 +1,2301 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://chuck808.github.io/jnsprosystems/settings/">
+      
+      
+        <link rel="prev" href="../advanced-features/">
+      
+      
+        <link rel="next" href="../troubleshooting/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Settings Guide - AppGatePro Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#settings-guide" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="AppGatePro Documentation" class="md-header__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AppGatePro Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Settings Guide
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="blue"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quickstart/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Quick Start
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../hardware/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Hardware Setup
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../external-devices/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  External Devices
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../operation/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Basic Operation
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../advanced-features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Advanced Features
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Settings Guide
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../troubleshooting/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Troubleshooting
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  FAQ
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="AppGatePro Documentation" class="md-nav__button md-logo" aria-label="AppGatePro Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AppGatePro Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quickstart/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quick Start
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../external-devices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    External Devices
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../operation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basic Operation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../advanced-features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Features
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Settings Guide
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Devices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="External Devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Icons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lights-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIGHTS Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timer-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMER Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gate-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GATE Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magram-mode-selector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MAG/RAM Mode Selector
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-force-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Force Threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#session-mode-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Mode Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gates-per-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gates per Session
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Tracking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distance Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distance-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-per-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance per Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-transition-25s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Transition (25s)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brightness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brightness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qr-code-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QR Code Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dashboard-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status Indicators
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typical-settings-combinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typical Settings Combinations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Typical Settings Combinations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solo-practice-no-external-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solo Practice (No External Devices)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-training-lights-breakbeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint Training (Lights + Breakbeam)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#club-training-session-5-riders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Club Training Session (5 Riders)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reaction-time-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reaction Time Focus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Tips
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latency-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latency Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-life-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Life Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-rider-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Rider Efficiency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competition-day-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competition Day Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings Reset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings Reset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soft-reset-settings-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soft Reset (Settings Only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hard-reset-full-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hard Reset (Full System)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#accessing-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessing Settings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Devices
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="External Devices">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#device-icons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Device Icons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lights-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LIGHTS Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timer-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TIMER Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gate-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        GATE Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#magram-mode-selector" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        MAG/RAM Mode Selector
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#performance-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Performance Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#g-force-threshold" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        G-Force Threshold
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint Time
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#session-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Session Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#session-mode-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Session Mode Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gates-per-session" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Gates per Session
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#distance-tracking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Tracking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Distance Tracking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#distance-toggle" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance Toggle
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#distance-per-run" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Distance per Run
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        System Settings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="System Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#auto-transition-25s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Auto-Transition (25s)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#volume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Volume
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#brightness" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Brightness
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#web-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web Dashboard
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Web Dashboard">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#qr-code-section" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QR Code Section
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-the-dashboard" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using the Dashboard
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dashboard-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Dashboard Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#status-indicators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Status Indicators
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#typical-settings-combinations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Typical Settings Combinations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Typical Settings Combinations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#solo-practice-no-external-devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Solo Practice (No External Devices)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sprint-training-lights-breakbeam" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Sprint Training (Lights + Breakbeam)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#club-training-session-5-riders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Club Training Session (5 Riders)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reaction-time-focus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Reaction Time Focus
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Tips
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#latency-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Latency Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-life-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Battery Life Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multi-rider-efficiency" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Multi-Rider Efficiency
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#competition-day-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Competition Day Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#settings-reset" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Settings Reset
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Settings Reset">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#soft-reset-settings-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Soft Reset (Settings Only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hard-reset-full-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Hard Reset (Full System)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="settings-guide">Settings Guide</h1>
+<p>Complete reference for configuring your AppGatePro system. This page explains every setting and how to use them effectively.</p>
+<h2 id="accessing-settings">Accessing Settings</h2>
+<p>From the main menu:
+1. Navigate to <strong>Settings</strong> or <strong>AppGateSettings</strong>
+2. The settings screen displays with all configuration options
+3. Changes save automatically as you make them
+4. Use the <strong>Back (←)</strong> or <strong>Home (🏠)</strong> buttons to exit</p>
+<div class="admonition tip">
+<p class="admonition-title">Settings Scroll</p>
+<p>The settings screen scrolls vertically. Swipe up to see all options.</p>
+</div>
+<hr />
+<h2 id="external-devices">External Devices</h2>
+<p>Control which wireless devices are active in your training setup. Each device can be toggled independently.</p>
+<h3 id="device-icons">Device Icons</h3>
+<p>Tap each icon to enable/disable the corresponding device:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>┌──────┐  ┌──────┐  ┌──────┐  ┌──────┐
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>│LIGHTS│  │TIMER │  │ GATE │  │MAG/  │
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>│      │  │      │  │      │  │ RAM  │
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>└──────┘  └──────┘  └──────┘  └──────┘
+</code></pre></div>
+<p><strong>Visual indicators:</strong>
+- <strong>Green glow</strong> = Device enabled and active
+- <strong>Gray/no glow</strong> = Device disabled
+- <strong>Status text</strong> below icon shows connection state</p>
+<h3 id="lights-toggle">LIGHTS Toggle</h3>
+<p><strong>Controls:</strong> JNS_Lights external start light system</p>
+<p><strong>When ON (green glow):</strong>
+- Start lights will display UCI-compliant sequence
+- Synchronized with Main Controller audio beeps
+- Latency automatically compensated</p>
+<p><strong>When OFF:</strong>
+- Only Main Controller screen shows visual sequence
+- Audio beeps still play
+- Useful for solo practice without lights</p>
+<p><strong>Status messages:</strong>
+- "Connected" - Device paired and ready
+- "Not Paired" - Need to pair device
+- "Searching..." - Attempting connection</p>
+<h3 id="timer-toggle">TIMER Toggle</h3>
+<p><strong>Controls:</strong> JNS_Timing external breakbeam timer</p>
+<p><strong>When ON (green glow):</strong>
+- System waits for beam break to stop timing
+- "Sprint Time" setting is ignored
+- Speed calculated from distance and actual time
+- 2-minute safety timeout if no beam break</p>
+<p><strong>When OFF:</strong>
+- System uses internal countdown timer
+- "Sprint Time" setting determines duration
+- Speed = 0.00 (no beam measurement)
+- Useful for technique practice without finish timing</p>
+<h3 id="gate-toggle">GATE Toggle</h3>
+<p><strong>Controls:</strong> Physical gate hardware (if you have one)</p>
+<div class="admonition info">
+<p class="admonition-title">Beta Systems</p>
+<p>Your beta system does not include a physical gate. Leave this setting OFF.</p>
+</div>
+<p><strong>When ON:</strong>
+- Enables communication with JNS_Gate hardware
+- "MAG/RAM" selector becomes active
+- Physical gate will rise and drop during sequence</p>
+<p><strong>When OFF (typical for beta testers):</strong>
+- Gate drop is simulated on screen and audio
+- "MAG/RAM" selector is grayed out and inactive
+- System functions normally for timing practice</p>
+<h3 id="magram-mode-selector">MAG/RAM Mode Selector</h3>
+<p><strong>Only active when GATE is enabled.</strong> Switches between two gate controller types:</p>
+<p><strong>MAG Mode (cyan/blue glow):</strong>
+- Magnetic gate controller
+- Gate is held up magnetically
+- Release signal drops gate instantly
+- Typical for electromagnetic gate systems</p>
+<p><strong>RAM Mode (yellow/gold glow):</strong>
+- 12V RAM-style gate controller
+- Motor-driven gate rise and drop
+- Sends "RISE" command during reset
+- Sends "DROP" command at start
+- Typical for pneumatic/hydraulic gates</p>
+<p><strong>When GATE is OFF:</strong>
+- Icon appears grayed out
+- No glow effect
+- Tapping has no effect
+- Mode selection not relevant</p>
+<hr />
+<h2 id="performance-settings">Performance Settings</h2>
+<p>Configure detection thresholds and timing parameters.</p>
+<h3 id="g-force-threshold">G-Force Threshold</h3>
+<p><strong>Roller selector with 6 options:</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>0.2G  →  0.5G  →  1G  →  2G  →  5G  →  10G
+</code></pre></div>
+<p><strong>What it controls:</strong>
+- Minimum acceleration required to trigger certain events
+- Affects reaction time detection sensitivity
+- Influences movement detection algorithms</p>
+<p><strong>Choosing the right threshold:</strong></p>
+<p><strong>0.2G - 0.5G (Very sensitive):</strong>
+- Low-intensity activities
+- Cadence analysis
+- Technique focus with minimal effort
+- May detect vibrations and bumps</p>
+<p><strong>1G - 2G (Moderate sensitivity) ← Recommended for most BMX:</strong>
+- Normal racing starts
+- Training sessions
+- Good balance of sensitivity and noise rejection
+- Detects strong pedal strokes</p>
+<p><strong>5G - 10G (Low sensitivity):</strong>
+- High-intensity racing
+- Filters out all but maximum effort
+- Professional competition use
+- Avoids false triggers from bike handling</p>
+<div class="admonition tip">
+<p class="admonition-title">Start with 2G</p>
+<p>For typical BMX gate starts, 2G provides excellent detection without false triggers. Adjust based on your experience.</p>
+</div>
+<h3 id="sprint-time">Sprint Time</h3>
+<p><strong>Roller selector: 1-10 seconds</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>1 sec  →  2 sec  →  3 sec  →  ...  →  10 sec
+</code></pre></div>
+<p><strong>What it controls:</strong>
+- Duration of timing window when External Timer is OFF
+- How long IMU records data
+- When timer automatically stops</p>
+<p><strong>Choosing sprint time:</strong></p>
+<p><strong>1-3 seconds:</strong>
+- Reaction time focus
+- Gate exit speed only
+- Quick burst training</p>
+<p><strong>4-6 seconds:</strong>
+- Standard sprint distance (10-20m)
+- First straight practice
+- Most common setting</p>
+<p><strong>7-10 seconds:</strong>
+- Longer distance training (30m+)
+- Full acceleration curve
+- Extended IMU recording</p>
+<div class="admonition warning">
+<p class="admonition-title">Only Active When External Timer is OFF</p>
+<p>If you have TIMER enabled (using breakbeam), this setting is ignored and timing runs until beam break.</p>
+</div>
+<hr />
+<h2 id="session-configuration">Session Configuration</h2>
+<p>Control multi-run tracking and batch data collection.</p>
+<h3 id="session-mode-toggle">Session Mode Toggle</h3>
+<p><strong>ON/OFF switch</strong></p>
+<p><strong>When OFF (default):</strong>
+- Each run is independent
+- Results shown after each run
+- No automatic counting or batching
+- Good for casual practice</p>
+<p><strong>When ON:</strong>
+- System tracks multiple runs as a session
+- Counter displays: "GATES: 5/5" (example)
+- After final run: Save prompt appears
+- Can save all runs together
+- Perfect for structured training</p>
+<p><strong>Use cases:</strong>
+- Multi-rider rotation (each rider = 1 gate)
+- Individual training sets (e.g., 5 practice starts)
+- Competition heats
+- Comparative analysis across runs</p>
+<h3 id="gates-per-session">Gates per Session</h3>
+<p><strong>Roller selector: 1-20</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>1  →  2  →  3  →  5  →  10  →  15  →  20
+</code></pre></div>
+<p><strong>Only active when Session Mode is ON.</strong></p>
+<p><strong>What it controls:</strong>
+- How many runs before session completes
+- Counter starts at this number and counts down
+- When it reaches 0/X, save prompt appears</p>
+<p><strong>Example session (Gates per Session = 5):</strong></p>
+<ol>
+<li><strong>Run 1 completes</strong> → Display: "GATES: 4/5"</li>
+<li><strong>Run 2 completes</strong> → Display: "GATES: 3/5"</li>
+<li><strong>Run 3 completes</strong> → Display: "GATES: 2/5"</li>
+<li><strong>Run 4 completes</strong> → Display: "GATES: 1/5"</li>
+<li><strong>Run 5 completes</strong> → Popup: "Session Complete - Save to SD? / Upload to Web? / Cancel"</li>
+</ol>
+<p><strong>Choosing gate count:</strong></p>
+<ul>
+<li><strong>3-5 gates:</strong> Individual training focus</li>
+<li><strong>5-8 gates:</strong> Standard club practice</li>
+<li><strong>10+ gates:</strong> Competition day with multiple heats</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Auto-Advance Between Runs</p>
+<p>After each run's finish screen, system automatically returns to ready after 25 seconds (if Auto-Transition is enabled). Perfect for continuous training.</p>
+</div>
+<hr />
+<h2 id="distance-tracking">Distance Tracking</h2>
+<p>Enable distance-based measurements and speed calculations.</p>
+<h3 id="distance-toggle">Distance Toggle</h3>
+<p><strong>ON/OFF switch</strong></p>
+<p><strong>When OFF:</strong>
+- Distance not recorded with runs
+- Speed calculations not performed
+- Focus purely on time and IMU analytics</p>
+<p><strong>When ON:</strong>
+- Distance value stored with each run
+- Enables speed calculation (if using External Timer)
+- Distance shown on finish screen
+- Useful for sprint distance training</p>
+<h3 id="distance-per-run">Distance per Run</h3>
+<p><strong>Roller selector: 5m, 10m, 15m, 20m, 25m, 30m</strong></p>
+<p><strong>Only active when Distance toggle is ON.</strong></p>
+<p><strong>What it controls:</strong>
+- The distance value associated with your runs
+- Used in speed calculation: Speed = Distance ÷ Time</p>
+<p><strong>Important:</strong> This is the distance from the <strong>start line to the breakbeam sensor</strong>. Measure accurately for correct speed calculations.</p>
+<p><strong>Speed calculation behavior:</strong></p>
+<p><strong>With External Timer ON:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>Distance: 20 meters
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>Time: 5.234 seconds (from beam break)
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>Speed: 20 ÷ 5.234 = 3.82 m/s (13.75 km/h)
+</code></pre></div></p>
+<p><strong>With External Timer OFF:</strong>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>Distance: 20 meters
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>Time: 10.000 seconds (countdown expired)
+<a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>Speed: 0.00 m/s (no beam break = no speed)
+</code></pre></div></p>
+<p><strong>Common distances:</strong></p>
+<ul>
+<li><strong>5m:</strong> Gate exit speed focus</li>
+<li><strong>10m:</strong> Short sprint, acceleration analysis</li>
+<li><strong>20m:</strong> Standard sprint distance</li>
+<li><strong>30m:</strong> Extended sprint, top speed measurement</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Measure Accurately</p>
+<p>Speed calculations are only as accurate as your distance measurement. Use a tape measure from gate position to breakbeam sensor.</p>
+</div>
+<hr />
+<h2 id="system-settings">System Settings</h2>
+<p>General device behavior and display preferences.</p>
+<h3 id="auto-transition-25s">Auto-Transition (25s)</h3>
+<p><strong>ON/OFF toggle</strong></p>
+<p><strong>When ON (recommended):</strong>
+- After finish screen displays, system waits 25 seconds
+- If no button press, automatically returns to ready state
+- Next rider can start immediately
+- Ideal for: Multiple riders, demo mode, continuous training</p>
+<p><strong>When OFF:</strong>
+- Finish screen remains displayed indefinitely
+- User must manually tap screen to continue
+- Gives more time to review results
+- Ideal for: Solo practice, detailed analysis</p>
+<p><strong>Use cases:</strong></p>
+<p><strong>Club training with rotation:</strong>
+- Auto-Transition: ON
+- Each rider finishes → 25 seconds → next rider ready</p>
+<p><strong>Solo technique practice:</strong>
+- Auto-Transition: OFF
+- Study each run's results carefully before continuing</p>
+<h3 id="volume">Volume</h3>
+<p><strong>Slider: 0-255</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>|──────────────●──────────| 
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>0           125         255
+<a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>(Silent)   (Medium)    (Max)
+</code></pre></div>
+<p><strong>What it controls:</strong>
+- Audio beep volume during start sequence
+- System notification sounds
+- Tone loudness for gate drop simulation</p>
+<p><strong>Recommended settings:</strong></p>
+<ul>
+<li><strong>Indoor track:</strong> 100-150 (moderate volume)</li>
+<li><strong>Outdoor track:</strong> 180-220 (louder for ambient noise)</li>
+<li><strong>Solo practice:</strong> 80-120 (lower is fine)</li>
+<li><strong>Silent mode:</strong> 0 (visual only, no audio)</li>
+</ul>
+<p><strong>Adjusting:</strong>
+- Drag slider left/right
+- Or tap anywhere on slider bar to jump to that level
+- Changes take effect immediately</p>
+<h3 id="brightness">Brightness</h3>
+<p><strong>Slider: 0-255</strong></p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>|──────────────●──────────| 
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>0           125         255
+<a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>(Dim)     (Medium)    (Bright)
+</code></pre></div>
+<p><strong>What it controls:</strong>
+- Screen backlight intensity
+- Display visibility</p>
+<p><strong>Recommended settings:</strong></p>
+<ul>
+<li><strong>Bright sunlight:</strong> 220-255 (maximum)</li>
+<li><strong>Indoor:</strong> 120-180 (moderate)</li>
+<li><strong>Evening/night:</strong> 60-100 (low to preserve night vision)</li>
+<li><strong>Battery saving:</strong> 80-120 (lower uses less power)</li>
+</ul>
+<p><strong>Tips:</strong>
+- Higher brightness drains battery faster
+- Lower brightness harder to see outdoors
+- Find balance between visibility and battery life</p>
+<hr />
+<h2 id="web-dashboard">Web Dashboard</h2>
+<p>Access real-time data and analytics from any device.</p>
+<h3 id="qr-code-section">QR Code Section</h3>
+<p>Located at the bottom of the Settings page. Always visible.</p>
+<p><strong>What it provides:</strong></p>
+<ol>
+<li><strong>QR code image</strong> - Scan with phone/tablet camera</li>
+<li><strong>Network name (SSID)</strong> - For manual connection</li>
+<li><strong>Network password</strong> - If required</li>
+<li><strong>URL</strong> - Dashboard web address</li>
+<li><strong>Server status</strong> - Connection readiness indicator</li>
+</ol>
+<h3 id="using-the-dashboard">Using the Dashboard</h3>
+<p><strong>Quick connect (recommended):</strong></p>
+<ol>
+<li>Open camera app on your phone or tablet</li>
+<li>Point at QR code on Main Controller screen</li>
+<li>Tap the notification that appears</li>
+<li>Your device connects to Main Controller WiFi automatically</li>
+<li>Dashboard opens in browser</li>
+</ol>
+<p><strong>Manual connect:</strong></p>
+<ol>
+<li>Go to WiFi settings on your device</li>
+<li>Connect to network shown on screen (e.g., "AppGatePro_ABC123")</li>
+<li>Enter password if prompted</li>
+<li>Open browser and enter URL shown on screen</li>
+<li>Dashboard loads</li>
+</ol>
+<h3 id="dashboard-features">Dashboard Features</h3>
+<p><strong>Live monitoring:</strong>
+- Current system state (Idle, Armed, Timing, Finished)
+- Real-time G-force graph during runs
+- Elapsed time updated continuously
+- Reaction time when detected</p>
+<p><strong>Results display:</strong>
+- Complete run statistics after each finish
+- Acceleration vs. time chart
+- All IMU analytics
+- Speed calculation (if available)</p>
+<p><strong>Session tracking:</strong>
+- View all runs in current session
+- Compare performance across runs
+- Download data as CSV or JSON
+- Share results link</p>
+<p><strong>Remote control:</strong>
+- Start/Stop functions (if enabled)
+- Coach can trigger sequences
+- Safety: Only when enabled in settings</p>
+<h3 id="status-indicators">Status Indicators</h3>
+<p><strong>✓ Server Ready:</strong>
+- Dashboard is accessible
+- Main Controller web server running
+- Ready for connections</p>
+<p><strong>⚠ Starting Server...:</strong>
+- Dashboard initializing
+- Wait a few seconds and refresh</p>
+<p><strong>✗ Server Error:</strong>
+- Dashboard unavailable
+- Check WiFi settings
+- Restart Main Controller if needed</p>
+<hr />
+<h2 id="typical-settings-combinations">Typical Settings Combinations</h2>
+<h3 id="solo-practice-no-external-devices">Solo Practice (No External Devices)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>External Devices:
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>  LIGHTS: OFF
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>  TIMER: OFF
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>  GATE: OFF
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>Performance:
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a>  G-Force: 2G
+<a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a>  Sprint Time: 5 seconds
+<a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a>
+<a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>Session:
+<a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>  Session Mode: OFF
+<a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>  Distance: OFF
+<a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>
+<a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a>System:
+<a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a>  Auto-Transition: OFF (take time to review)
+<a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>  Volume: 100
+<a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a>  Brightness: Auto/Medium
+</code></pre></div>
+<p><strong>Result:</strong> Simple standalone timing with on-screen feedback only.</p>
+<hr />
+<h3 id="sprint-training-lights-breakbeam">Sprint Training (Lights + Breakbeam)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>External Devices:
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>  LIGHTS: ON
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  TIMER: ON
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  GATE: OFF
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>Performance:
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>  G-Force: 2G
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>  Sprint Time: N/A (ignored)
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>Session:
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>  Session Mode: OFF
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>  Distance: ON (20m)
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>
+<a id="__codelineno-9-14" name="__codelineno-9-14" href="#__codelineno-9-14"></a>System:
+<a id="__codelineno-9-15" name="__codelineno-9-15" href="#__codelineno-9-15"></a>  Auto-Transition: ON (25s)
+<a id="__codelineno-9-16" name="__codelineno-9-16" href="#__codelineno-9-16"></a>  Volume: 150
+<a id="__codelineno-9-17" name="__codelineno-9-17" href="#__codelineno-9-17"></a>  Brightness: High (outdoor)
+</code></pre></div>
+<p><strong>Result:</strong> Professional timing with lights and precise speed measurement.</p>
+<hr />
+<h3 id="club-training-session-5-riders">Club Training Session (5 Riders)</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>External Devices:
+<a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>  LIGHTS: ON
+<a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  TIMER: ON
+<a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  GATE: OFF
+<a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>
+<a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>Performance:
+<a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>  G-Force: 2G
+<a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>  Sprint Time: N/A (ignored)
+<a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>
+<a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>Session:
+<a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>  Session Mode: ON
+<a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>  Gates per Session: 5
+<a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>  Distance: ON (20m)
+<a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>
+<a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>System:
+<a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>  Auto-Transition: ON (25s)
+<a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>  Volume: 180 (loud for outdoor)
+<a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a>  Brightness: 200
+</code></pre></div>
+<p><strong>Result:</strong> Five riders rotate, system tracks all runs, saves together at end.</p>
+<hr />
+<h3 id="reaction-time-focus">Reaction Time Focus</h3>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>External Devices:
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>  LIGHTS: ON
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  TIMER: OFF
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>  GATE: OFF
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+<a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>Performance:
+<a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>  G-Force: 1G (sensitive)
+<a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>  Sprint Time: 3 seconds (short)
+<a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>
+<a id="__codelineno-11-10" name="__codelineno-11-10" href="#__codelineno-11-10"></a>Session:
+<a id="__codelineno-11-11" name="__codelineno-11-11" href="#__codelineno-11-11"></a>  Session Mode: ON
+<a id="__codelineno-11-12" name="__codelineno-11-12" href="#__codelineno-11-12"></a>  Gates per Session: 10 (many reps)
+<a id="__codelineno-11-13" name="__codelineno-11-13" href="#__codelineno-11-13"></a>  Distance: OFF (not relevant)
+<a id="__codelineno-11-14" name="__codelineno-11-14" href="#__codelineno-11-14"></a>
+<a id="__codelineno-11-15" name="__codelineno-11-15" href="#__codelineno-11-15"></a>System:
+<a id="__codelineno-11-16" name="__codelineno-11-16" href="#__codelineno-11-16"></a>  Auto-Transition: ON
+<a id="__codelineno-11-17" name="__codelineno-11-17" href="#__codelineno-11-17"></a>  Volume: 120
+</code></pre></div>
+<p><strong>Result:</strong> Quick repeats focused on minimizing reaction time.</p>
+<hr />
+<h2 id="advanced-tips">Advanced Tips</h2>
+<h3 id="latency-optimization">Latency Optimization</h3>
+<p><strong>The system automatically measures latency during RESET:</strong>
+- Sends test signals to external devices
+- Measures round-trip time
+- Stores compensation values
+- Adjusts trigger timing for perfect sync</p>
+<p><strong>To ensure best latency compensation:</strong>
+1. Keep devices within 50m during operation
+2. Minimize obstacles between Main Controller and external devices
+3. Run RESET sequence before each session
+4. If sync seems off, power cycle all devices and re-pair</p>
+<h3 id="battery-life-optimization">Battery Life Optimization</h3>
+<p><strong>Settings that impact battery:</strong></p>
+<p><strong>High drain:</strong>
+- Brightness: 200-255
+- WiFi/Dashboard: Enabled
+- External devices: All enabled</p>
+<p><strong>Low drain:</strong>
+- Brightness: 80-120
+- WiFi: Disabled when not needed
+- External devices: Only what you need</p>
+<p><strong>For all-day training:</strong>
+- Start at 50% brightness
+- Disable WiFi except when viewing dashboard
+- Enable Auto-Transition to reduce screen-on time</p>
+<h3 id="multi-rider-efficiency">Multi-Rider Efficiency</h3>
+<p><strong>For clubs with 5+ riders:</strong></p>
+<ol>
+<li><strong>Enable Session Mode</strong> with Gates per Session = rider count</li>
+<li><strong>Enable Auto-Transition</strong> (25s)</li>
+<li><strong>Assign Main Controller</strong> to one person (starter/coach)</li>
+<li><strong>Each rider goes in turn:</strong></li>
+<li>Rides up to start</li>
+<li>Starter taps START</li>
+<li>Rider completes run</li>
+<li>System auto-advances</li>
+<li>Next rider ready</li>
+<li><strong>After all riders:</strong> One save operation for entire session</li>
+</ol>
+<p><strong>Efficiency gain:</strong> No manual saving between runs, continuous flow.</p>
+<h3 id="competition-day-setup">Competition Day Setup</h3>
+<p><strong>Day before:</strong>
+- Full system test with all devices
+- Verify all pairings solid
+- Check battery levels
+- Update firmware if available
+- Save configuration backup</p>
+<p><strong>Morning of:</strong>
+- Fresh batteries in all devices
+- Quick test run to verify sync
+- Adjust brightness for conditions
+- Set appropriate distance
+- Enable Session Mode for heats</p>
+<hr />
+<h2 id="settings-reset">Settings Reset</h2>
+<h3 id="soft-reset-settings-only">Soft Reset (Settings Only)</h3>
+<p><strong>To restore default settings:</strong>
+1. Navigate to Settings
+2. Scroll to bottom
+3. Look for "Reset to Defaults" option
+4. Confirm reset
+5. All settings return to factory defaults
+6. Device pairings are preserved</p>
+<h3 id="hard-reset-full-system">Hard Reset (Full System)</h3>
+<p><strong>If experiencing issues:</strong>
+1. Power off Main Controller
+2. Hold power button for 10 seconds
+3. Release and power on normally
+4. System performs full initialization
+5. May need to re-pair external devices</p>
+<hr />
+<h2 id="next-steps">Next Steps</h2>
+<ul>
+<li><strong><a href="../external-devices/">External Devices</a></strong> - Detailed setup for lights and timer</li>
+<li><strong><a href="../advanced-features/">Advanced Features</a></strong> - Session mode, analytics, web dashboard</li>
+<li><strong><a href="../operation/">Basic Operation</a></strong> - Complete system operation guide</li>
+<li><strong><a href="../troubleshooting/">Troubleshooting</a></strong> - Fix common issues</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "search.suggest", "search.highlight", "content.code.copy", "content.tabs.link"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
