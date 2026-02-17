@@ -4,9 +4,9 @@ Complete guide to assembling and configuring your AppGatePro system.
 
 ## System Components
 
-### CoreS3 Main Unit
+### Main Controller Main Unit
 
-The CoreS3 is the heart of your system:
+The Main Controller is the heart of your system:
 
 - **Display**: 320×240 touchscreen for menu navigation
 - **Sensors**: 6-axis IMU sampling at 200Hz
@@ -14,7 +14,7 @@ The CoreS3 is the heart of your system:
 - **Connectivity**: WiFi, ESP-NOW wireless protocol
 - **Storage**: 8GB internal flash memory
 
-![CoreS3 Diagram](images/cores3-ports.png)
+![Main Controller Diagram](images/Main Controller-ports.png)
 
 ### Remote Control
 
@@ -32,12 +32,12 @@ Wireless gate trigger with 100m+ range:
 !!! warning "First Charge Important"
     Fully charge all components before first use to calibrate battery management.
 
-- Connect CoreS3 via USB-C to any 5V power source
+- Connect Main Controller via USB-C to any 5V power source
 - Charging: Red LED pulsing
 - Full charge: Green LED solid
 - Typical charge time: 90 minutes from empty
 
-### 2. CoreS3 Mounting
+### 2. Main Controller Mounting
 
 #### Recommended Mounting Locations
 
@@ -64,7 +64,7 @@ Wireless gate trigger with 100m+ range:
    - Screen visible and accessible
    - No interference with cables/brake lines
 4. **Tighten securely**: Unit should not shift when pulled
-5. **Insert CoreS3**: Slide into bracket until click
+5. **Insert Main Controller**: Slide into bracket until click
 
 !!! tip "Orientation Matters"
     The forward arrow MUST point toward the front wheel. Incorrect orientation will cause inaccurate measurements.
@@ -73,16 +73,16 @@ Wireless gate trigger with 100m+ range:
 
 First-time pairing:
 
-1. Power on CoreS3
+1. Power on Main Controller
 2. Navigate: **Main Menu → Settings → Remote → Add Device**
 3. Hold remote trigger button for 3 seconds (LED flashes rapidly)
-4. CoreS3 shows: `Scanning for remote...`
+4. Main Controller shows: `Scanning for remote...`
 5. When found: `Remote #1234 found - Pair? [Yes/No]`
 6. Select **Yes**
-7. Test: Press remote button → CoreS3 beeps
+7. Test: Press remote button → Main Controller beeps
 
 !!! info "Multiple Remotes"
-    You can pair up to 4 remotes to one CoreS3. Useful for club training with multiple riders.
+    You can pair up to 4 remotes to one Main Controller. Useful for club training with multiple riders.
 
 ## Calibration
 
@@ -97,7 +97,7 @@ Required for accurate measurements. Perform in these situations:
 
 **Calibration Procedure:**
 
-1. Remove CoreS3 from bike
+1. Remove Main Controller from bike
 2. Place on **flat, level surface**
 3. Navigate: **Settings → Sensors → Calibrate IMU**
 4. Device shows: `Keep still for 10 seconds...`
@@ -202,5 +202,5 @@ If storing for >1 month:
 
 !!! question "Remote range seems short?"
     - Replace CR2032 battery in remote
-    - Check for metal objects between remote/CoreS3
+    - Check for metal objects between remote/Main Controller
     - Typical range: 100m+ in open space, 30-50m with obstacles

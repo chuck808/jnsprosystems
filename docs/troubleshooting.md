@@ -70,11 +70,11 @@ Before diving into specific issues, run the built-in diagnostic:
 
 1. **Verify orientation** - Arrow MUST point forward
    ```
-   Correct:  [→ CoreS3] ====> (front of bike)
-   Wrong:    [← CoreS3] ====> (front of bike)
+   Correct:  [→ Main Controller] ====> (front of bike)
+   Wrong:    [← Main Controller] ====> (front of bike)
    ```
 
-2. **Check mounting** - Shake bike, CoreS3 should not move at all
+2. **Check mounting** - Shake bike, Main Controller should not move at all
    - If loose, tighten velcro strap
    - Consider zip-tie backup
 
@@ -107,7 +107,7 @@ Before diving into specific issues, run the built-in diagnostic:
 
 **Step-by-step fix:**
 
-1. Remove CoreS3 from bike
+1. Remove Main Controller from bike
 2. Place on flat, stable surface
 3. Power off completely (hold power 5 seconds)
 4. Wait 10 seconds
@@ -134,7 +134,7 @@ Before diving into specific issues, run the built-in diagnostic:
    - If "No remote paired", need to pair
 
 2. **Test remote battery**
-   - Press button away from CoreS3
+   - Press button away from Main Controller
    - LED should flash bright green
    - Dim or no flash = dead battery
    - Replace with CR2032 coin cell
@@ -158,7 +158,7 @@ Before diving into specific issues, run the built-in diagnostic:
 
 **Solution:**
 
-- Each CoreS3 can pair with specific remotes only
+- Each Main Controller can pair with specific remotes only
 - Other remotes should NOT trigger your device
 - If they do:
   1. Settings → Remote → Remove All Devices
@@ -214,8 +214,8 @@ Before diving into specific issues, run the built-in diagnostic:
    - Re-enter password carefully
    - Check for caps lock/special characters
 
-2. **WiFi band** - CoreS3 supports 2.4GHz only
-   - If your router is 5GHz only, CoreS3 won't connect
+2. **WiFi band** - Main Controller supports 2.4GHz only
+   - If your router is 5GHz only, Main Controller won't connect
    - Enable 2.4GHz band in router settings
 
 3. **Signal strength** - Move closer to router
@@ -223,7 +223,7 @@ Before diving into specific issues, run the built-in diagnostic:
 
 4. **Router compatibility**
    - Some public/track WiFi require web login
-   - These won't work with CoreS3
+   - These won't work with Main Controller
    - Use mobile hotspot instead
 
 5. **Forget and reconnect**
@@ -416,7 +416,7 @@ A: Monthly is recommended, or whenever you notice accuracy issues.
 A: Yes, but cable may interfere with mounting. Best to charge between sessions.
 
 **Q: What happens if I drop the device?**  
-A: CoreS3 is built tough but not indestructible. After any impact, recalibrate IMU and run diagnostics.
+A: Main Controller is built tough but not indestructible. After any impact, recalibrate IMU and run diagnostics.
 
 **Q: Why does my remote need to be close sometimes?**  
 A: Check remote battery. Weak battery = reduced range (normal is 100m+).

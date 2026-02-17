@@ -8,7 +8,7 @@ Your system comes with:
 
 - **JNS_Lights** - Professional start light system for visual timing cues
 - **JNS_Timing** - Breakbeam timer for precise finish line detection
-- **CoreS3 Main Unit** - Central controller with built-in IMU sensors
+- **Main Controller Unit** - Central controller with built-in IMU sensors
 
 These devices communicate wirelessly using ESP-NOW protocol for ultra-low latency (typically <10ms).
 
@@ -18,7 +18,7 @@ These devices communicate wirelessly using ESP-NOW protocol for ultra-low latenc
 
 ```
 ┌─────────────────┐
-│   CoreS3 Unit   │ ──wireless──> ┌──────────────┐
+│   Main Controller Unit   │ ──wireless──> ┌──────────────┐
 │  (on your bike) │                │  JNS_Lights  │
 └─────────────────┘                └──────────────┘
          │                         (at start line)
@@ -42,8 +42,8 @@ These devices communicate wirelessly using ESP-NOW protocol for ultra-low latenc
 Before your first session, complete these steps:
 
 - [ ] Charge all devices fully
-- [ ] Pair JNS_Lights to CoreS3
-- [ ] Pair JNS_Timing to CoreS3
+- [ ] Pair JNS_Lights to Main Controller
+- [ ] Pair JNS_Timing to Main Controller
 - [ ] Position lights at start line
 - [ ] Set up breakbeam at finish line
 - [ ] Verify wireless connectivity
@@ -58,7 +58,7 @@ Before your first session, complete these steps:
 The JNS_Lights unit displays the UCI-compliant start sequence visually:
 - Four warning lights (illuminating in sequence)
 - Final "gate drop" indication
-- Synchronized with CoreS3 audio beeps
+- Synchronized with Main Controller audio beeps
 - Latency compensation for perfect timing
 
 ### Physical Setup
@@ -98,12 +98,12 @@ Place JNS_Lights at the start line where all riders can clearly see it:
 **Step-by-step pairing:**
 
 1. **Power on JNS_Lights** - Status LED flashes blue (pairing mode)
-2. **On CoreS3:** Navigate to **Settings → External Devices**
+2. **On Main Controller:** Navigate to **Settings → External Devices**
 3. **Tap the LIGHTS icon** - It will begin searching
 4. **Wait for discovery** - Takes 5-10 seconds
 5. **Confirm pairing** - Tap "Pair" when device appears
 6. **Success indication:**
-   - LIGHTS icon glows green on CoreS3
+   - LIGHTS icon glows green on Main Controller
    - JNS_Lights status LED turns solid blue
    - Test lights will flash briefly
 
@@ -122,12 +122,12 @@ After pairing, test the connection:
 3. **Tap RESET** button
 4. **Watch JNS_Lights:**
    - Should flash four times during warning sequence
-   - Synchronized with audio beeps from CoreS3
+   - Synchronized with audio beeps from Main Controller
 5. **Tap START** to run full sequence
 6. **Lights should illuminate** in sequence with perfect timing
 
 !!! success "What Good Synchronization Looks Like"
-    Lights should illuminate within 10-20ms of the CoreS3 beep. Any person watching should perceive them as simultaneous.
+    Lights should illuminate within 10-20ms of the Main Controller beep. Any person watching should perceive them as simultaneous.
 
 ### JNS_Lights Troubleshooting
 
@@ -138,10 +138,10 @@ After pairing, test the connection:
 - Check battery/power supply
 
 **Lights are delayed or out of sync:**
-- CoreS3 measures and compensates for latency automatically
+- Main Controller measures and compensates for latency automatically
 - If sync is consistently off by >50ms, check for wireless interference
 - Keep devices within 50m during operation
-- Ensure line of sight between CoreS3 and JNS_Lights
+- Ensure line of sight between Main Controller and JNS_Lights
 
 **Status LED meanings:**
 - **Solid Blue:** Paired and ready
@@ -158,7 +158,7 @@ After pairing, test the connection:
 The JNS_Timing unit provides precise finish line detection:
 - Infrared breakbeam sensor
 - Detects when rider crosses finish line
-- Sends timing data back to CoreS3 wirelessly
+- Sends timing data back to Main Controller wirelessly
 - Calculates speed based on distance and time
 - Accuracy: ±1ms
 
@@ -172,7 +172,7 @@ The breakbeam consists of two units:
     [Transmitter]                [Receiver]
          │                            │
          │    Invisible IR Beam       │
-         │ ════════════════════════> │
+         │ ════════════════════════>  │
          │                            │
     (One side                    (Other side
      of track)                    of track)
@@ -180,7 +180,7 @@ The breakbeam consists of two units:
 
 - **Transmitter:** Emits infrared beam
 - **Receiver:** Detects beam, connected to JNS_Timing controller
-- **When broken:** Controller sends "STOP" signal to CoreS3
+- **When broken:** Controller sends "STOP" signal to Main Controller
 
 **2. Positioning the Breakbeam**
 
@@ -190,8 +190,8 @@ Set up at your desired finish line distance:
 Start Line                                    Finish Line
     ║                                              ▼
     ║                                    [TX]═══════[RX]
-    ║                                     ↑         ↑
-    ║<─────── Track Distance ────────>│ Beam at wheel height
+    ║                                      ↑         ↑
+    ║<─────── Track Distance ────────> │ Beam at wheel height
     ║        (10m, 20m, etc.)          │
 ```
 
@@ -221,14 +221,14 @@ Start Line                                    Finish Line
 **Step-by-step pairing:**
 
 1. **Power on JNS_Timing controller** - Status LED flashes green (pairing mode)
-2. **On CoreS3:** Navigate to **Settings → External Devices**
+2. **On Main Controller:** Navigate to **Settings → External Devices**
 3. **Tap the TIMER icon** - Begin scanning
 4. **Wait for discovery** - Takes 5-10 seconds
 5. **Confirm pairing** - Select "Pair" when JNS_Timing appears
 6. **Success indication:**
-   - TIMER icon glows green on CoreS3
+   - TIMER icon glows green on Main Controller
    - JNS_Timing status LED turns solid green
-   - CoreS3 displays "External Timer Connected"
+   - Main Controller displays "External Timer Connected"
 
 ### Configuring Distance
 
@@ -277,7 +277,7 @@ Speed: 3.82 m/s (13.75 km/h)
 **Timing doesn't stop when crossing beam:**
 - Verify TIMER is enabled in Settings (green glow)
 - Check pairing status - re-pair if needed
-- Ensure CoreS3 is within wireless range (50m)
+- Ensure Main Controller is within wireless range (50m)
 - Check JNS_Timing controller battery/power
 - Review status LED on controller (should be solid green)
 
@@ -342,7 +342,7 @@ After pairing, you control which devices are active:
 The system automatically measures and compensates for wireless latency:
 
 **During RESET sequence:**
-1. CoreS3 sends test signal to each device
+1. Main Controller sends test signal to each device
 2. Measures round-trip time
 3. Stores latency values (typically 5-15ms)
 4. Adjusts trigger timing to compensate
@@ -351,7 +351,7 @@ The system automatically measures and compensates for wireless latency:
 
 You'll see this in action:
 - RESET sequence includes timing calibration
-- Lights flash in perfect sync with CoreS3 beeps
+- Lights flash in perfect sync with Main Controller beeps
 - No manual adjustment needed
 
 ---
@@ -367,25 +367,25 @@ Before each training session, verify:
 - [ ] LIGHTS and TIMER enabled in Settings (green glow)
 - [ ] Distance configured correctly
 - [ ] Breakbeam aligned and clear
-- [ ] CoreS3 mounted securely on bike
+- [ ] Main Controller mounted securely on bike
 
 ### Running Your First Full System Test
 
 **1. Position Everything:**
 - JNS_Lights at start line (visible to rider)
 - Breakbeam at finish line (configured distance)
-- CoreS3mounted on bike
+- Main Controllermounted on bike
 
 **2. Start Sequence:**
-- On CoreS3: Navigate to **AppGatePro**
+- On Main Controller: Navigate to **AppGatePro**
 - Tap **RESET** button
 - **Watch/listen for:**
-  - Audio warning sequence on CoreS3
+  - Audio warning sequence on Main Controller
   - JNS_Lights flashing in sync
   - "Gate Armed" state after sequence
 
 **3. Execute Test Run:**
-- Tap **START** on CoreS3
+- Tap **START** on Main Controller
 - **Observe:**
   - "Random Start" announcement
   - "Riders Ready - Watch the Gate"
@@ -429,7 +429,7 @@ Before each training session, verify:
 **For Sprint Training (10-20m):**
 ```
 Start                    Finish
-  ║                        ║
+  ║                       ║
   ║ [Lights]              ║ [Beam]
   ║    │                  ║   │
   ║    ▼                  ║   ▼
@@ -438,7 +438,7 @@ Start                    Finish
 
 **For Longer Distances (30m+):**
 - Ensure wireless range is adequate
-- Both devices should be within 50m of CoreS3
+- Both devices should be within 50m of Main Controller
 - Line of sight helps but not required
 
 ### Battery Management
@@ -446,7 +446,7 @@ Start                    Finish
 **Expected battery life:**
 - **JNS_Lights:** 4-6 hours continuous use
 - **JNS_Timing:** 6-8 hours continuous use
-- **CoreS3:** 4-5 hours (with WiFi off)
+- **Main Controller:** 4-5 hours (with WiFi off)
 
 **Tips:**
 - Charge all devices between sessions
@@ -478,7 +478,7 @@ The system supports rapid switching between riders:
 
 **Method 1 - Sequential (one at a time):**
 1. Rider 1 completes run
-2. Results displayed on CoreS3
+2. Results displayed on Main Controller
 3. After 25 seconds, auto-advances to ready
 4. Rider 2 starts next run
 5. All devices remain active and synced
@@ -495,7 +495,7 @@ The system supports rapid switching between riders:
 Use the web dashboard for remote monitoring:
 
 1. **Scan QR code** in Settings with phone/tablet
-2. **Dashboard connects** to CoreS3 WiFi
+2. **Dashboard connects** to Main Controller WiFi
 3. **Live updates** during each run:
    - Current state (Armed, Timing, Finished)
    - Real-time G-force graph
@@ -526,7 +526,7 @@ Use the web dashboard for remote monitoring:
 - Full device test the day before
 - Fresh batteries in all devices
 - Spare cables and batteries packed
-- Backup CoreS3 configuration to cloud
+- Backup Main Controller configuration to cloud
 
 ---
 

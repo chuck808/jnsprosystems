@@ -30,7 +30,7 @@ The timing is UCI-compliant, but you'd need to check with your local federation 
 
 ### What's included in the system?
 
-- CoreS3 main unit (ESP32-based with IMU)
+- Main Controller unit (ESP32-based with IMU)
 - JNS_Lights (external start light system)
 - JNS_Timing (breakbeam timer with transmitter/receiver)
 - Wireless remote control
@@ -57,7 +57,7 @@ All standard BMX bikes:
 
 ### How long does the battery last?
 
-**CoreS3:**
+**Main Controller:**
 
 - Training session: 5-6 hours (WiFi off)
 - With WiFi: 3-4 hours
@@ -95,7 +95,7 @@ Accuracy equals or exceeds commercial systems costing 100x more.
 
 **Sort of:**
 
-- One CoreS3 can store multiple rider profiles
+- One Main Controller can store multiple rider profiles
 - One rider at a time (can't time multiple gates simultaneously)
 - Best for: Family training, club coaches rotating between riders
 - For simultaneous timing: Need one system per gate
@@ -130,7 +130,7 @@ Accuracy equals or exceeds commercial systems costing 100x more.
 
 **Setup process:**
 1. Power on external device (enters pairing mode)
-2. Navigate to Settings on CoreS3
+2. Navigate to Settings on Main Controller
 3. Tap device icon (LIGHTS or TIMER)
 4. System scans and pairs automatically
 5. Green glow indicates successful pairing
@@ -140,7 +140,7 @@ See **[External Devices Setup](external-devices.md)** for complete guide.
 ### Do I need the external lights and timer?
 
 **No - the system works standalone:**
-- CoreS3 displays visual sequence on screen
+- Main Controller displays visual sequence on screen
 - Audio beeps provide timing cues
 - Internal timer can be used instead of breakbeam
 - Perfect for solo practice
@@ -155,7 +155,7 @@ See **[External Devices Setup](external-devices.md)** for complete guide.
 ### What's the difference between internal and external timing?
 
 **Internal Timer Mode:**
-- Uses CoreS3 countdown (1-10 seconds configurable)
+- Uses Main Controller countdown (1-10 seconds configurable)
 - Timer expires at set duration
 - Speed = 0.00 (no beam sensor)
 - Good for: Technique practice, reaction time focus
@@ -183,7 +183,7 @@ See **[External Devices Setup](external-devices.md)** for complete guide.
 
 **Two places:**
 
-1. **Locally** - On CoreS3 internal storage (~500 sessions)
+1. **Locally** - On Main Controller internal storage (~500 sessions)
 2. **Cloud** - Auto-uploaded when WiFi available (unlimited storage)
 
 ### Can I access my data from phone/computer?

@@ -41,11 +41,11 @@ Tap each icon to enable/disable the corresponding device:
 
 **When ON (green glow):**
 - Start lights will display UCI-compliant sequence
-- Synchronized with CoreS3 audio beeps
+- Synchronized with Main Controller audio beeps
 - Latency automatically compensated
 
 **When OFF:**
-- Only CoreS3 screen shows visual sequence
+- Only Main Controller screen shows visual sequence
 - Audio beeps still play
 - Useful for solo practice without lights
 
@@ -413,9 +413,9 @@ Located at the bottom of the Settings page. Always visible.
 **Quick connect (recommended):**
 
 1. Open camera app on your phone or tablet
-2. Point at QR code on CoreS3 screen
+2. Point at QR code on Main Controller screen
 3. Tap the notification that appears
-4. Your device connects to CoreS3 WiFi automatically
+4. Your device connects to Main Controller WiFi automatically
 5. Dashboard opens in browser
 
 **Manual connect:**
@@ -455,7 +455,7 @@ Located at the bottom of the Settings page. Always visible.
 
 **✓ Server Ready:**
 - Dashboard is accessible
-- CoreS3 web server running
+- Main Controller web server running
 - Ready for connections
 
 **⚠ Starting Server...:**
@@ -465,7 +465,7 @@ Located at the bottom of the Settings page. Always visible.
 **✗ Server Error:**
 - Dashboard unavailable
 - Check WiFi settings
-- Restart CoreS3 if needed
+- Restart Main Controller if needed
 
 ---
 
@@ -588,7 +588,7 @@ System:
 
 **To ensure best latency compensation:**
 1. Keep devices within 50m during operation
-2. Minimize obstacles between CoreS3 and external devices
+2. Minimize obstacles between Main Controller and external devices
 3. Run RESET sequence before each session
 4. If sync seems off, power cycle all devices and re-pair
 
@@ -617,7 +617,7 @@ System:
 
 1. **Enable Session Mode** with Gates per Session = rider count
 2. **Enable Auto-Transition** (25s)
-3. **Assign CoreS3** to one person (starter/coach)
+3. **Assign Main Controller** to one person (starter/coach)
 4. **Each rider goes in turn:**
    - Rides up to start
    - Starter taps START
@@ -661,7 +661,7 @@ System:
 ### Hard Reset (Full System)
 
 **If experiencing issues:**
-1. Power off CoreS3
+1. Power off Main Controller
 2. Hold power button for 10 seconds
 3. Release and power on normally
 4. System performs full initialization

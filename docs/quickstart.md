@@ -3,42 +3,42 @@
 Get up and running with AppGatePro in under 5 minutes!
 
 !!! info "Your System Includes External Devices"
-    Your AppGatePro system includes external lights and breakbeam timer. This Quick Start covers basic operation with just the CoreS3 main unit. For full system setup with external devices, see **[External Devices Setup](external-devices.md)** after completing this guide.
+    Your AppGatePro system includes external lights and breakbeam timer. This Quick Start covers basic operation with just the Main Controller main unit. For full system setup with external devices, see **[External Devices Setup](external-devices.md)** after completing this guide.
 
 ## Before You Begin
 
 !!! warning "Battery Check"
-    Ensure both the CoreS3 main unit and remote are fully charged before first use. Connect via USB-C and charge until the LED shows solid green.
+    Ensure both the Main Controller main unit and remote are fully charged before first use. Connect via USB-C and charge until the LED shows solid green.
 
 ## Step 1: Power On
 
-1. Press and hold the **Power button** on the CoreS3 for 2 seconds
+1. Press and hold the **Power button** on the Main Controller for 2 seconds
 2. Wait for the boot screen showing the AppGatePro logo
 3. You should see the main menu within 5 seconds
 
 ```
 ╔══════════════════════════════════╗
-║      APPGATEPRO v2.4.1          ║
+║      APPGATEPRO v2.4.1           ║
 ║                                  ║
-║   [1] Start Gate Timing         ║
-║   [2] Sprint Training           ║
-║   [3] Cadence Analysis          ║
-║   [4] Settings                  ║
+║   [1] Start Gate Timing          ║
+║   [2] Sprint Training            ║
+║   [3] Cadence Analysis           ║
+║   [4] Settings                   ║
 ╚══════════════════════════════════╝
 ```
 
 ## Step 2: Mount to Bike
 
 !!! tip "Mounting Location"
-    Mount the CoreS3 to the frame's **head tube** or **top tube** for best results. Ensure the arrow on the device points **forward** toward the handlebars.
+    Mount the Main Controller to the frame's **head tube** or **top tube** for best results. Ensure the arrow on the device points **forward** toward the handlebars.
 
 ### Mounting Instructions
 
 1. Clean the mounting surface with the provided alcohol wipe
-2. Attach the velcro strap through the CoreS3 mounting bracket
+2. Attach the velcro strap through the Main Controller mounting bracket
 3. Position with the **arrow pointing forward**
 4. Tighten the strap securely - the unit should not move when shaken
-5. Press the CoreS3 into the bracket until it clicks
+5. Press the Main Controller into the bracket until it clicks
 
 ![Mounting Diagram](images/mounting-diagram.png)
 

@@ -10,7 +10,7 @@ AppGatePro is a comprehensive UCI-compliant gate timing system that provides lab
 
 Your AppGatePro system includes:
 
-- **CoreS3 Main Unit** - The brain of your timing system with built-in IMU sensors
+- **Main Controller Unit** - The brain of your timing system with built-in IMU sensors
 - **JNS_Lights** - Professional start light system with UCI-compliant sequence
 - **JNS_Timing** - Breakbeam timer for precise finish line detection
 - **Remote Control** - Wireless gate triggering from up to 100m

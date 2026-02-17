@@ -6,15 +6,15 @@ Master all the features and modes of your AppGatePro system.
 
 ```
 ╔══════════════════════════════════╗
-║      APPGATEPRO v2.4.1          ║
+║      APPGATEPRO v2.4.1           ║
 ║                                  ║
-║   [1] Start Gate Timing         ║
-║   [2] Sprint Training           ║
-║   [3] Cadence Analysis          ║
-║   [4] Interval Timer            ║
-║   [5] View Sessions             ║
-║   [6] Settings                  ║
-║   [7] Web Dashboard             ║
+║   [1] Start Gate Timing          ║
+║   [2] Sprint Training            ║
+║   [3] Cadence Analysis           ║
+║   [4] Interval Timer             ║
+║   [5] View Sessions              ║
+║   [6] Settings                   ║
+║   [7] Web Dashboard              ║
 ╚══════════════════════════════════╝
 ```
 
@@ -63,16 +63,16 @@ For specific training scenarios:
 
 ```
 ╔══════════════════════════════════╗
-║     RUN #143 - 14:23:45         ║
+║     RUN #143 - 14:23:45          ║
 ╠══════════════════════════════════╣
 ║  REACTION:     142 ms    ⚡ PR!  ║
-║  GATE SPEED:   31.2 km/h        ║
-║  PEAK POWER:   847 W            ║
-║  AVG CADENCE:  163 RPM          ║
-║  MAX PITCH:    12.3°            ║
-║  WHEELIE:      0.42s @ 4.2m     ║
+║  GATE SPEED:   31.2 km/h         ║
+║  PEAK POWER:   847 W             ║
+║  AVG CADENCE:  163 RPM           ║
+║  MAX PITCH:    12.3°             ║
+║  WHEELIE:      0.42s @ 4.2m      ║
 ╠══════════════════════════════════╣
-║  [SAVE]  [DISCARD]  [REPLAY]   ║
+║  [SAVE]  [DISCARD]  [REPLAY]     ║
 ╚══════════════════════════════════╝
 ```
 
@@ -131,16 +131,16 @@ Study your pedaling efficiency.
 
 ```
 ╔══════════════════════════════════╗
-║    CADENCE ANALYSIS - 60s       ║
+║    CADENCE ANALYSIS - 60s        ║
 ╠══════════════════════════════════╣
-║  AVERAGE:      157 RPM          ║
-║  PEAK:         184 RPM          ║
-║  CONSISTENCY:  92%   ✓ Good     ║
+║  AVERAGE:      157 RPM           ║
+║  PEAK:         184 RPM           ║
+║  CONSISTENCY:  92%   ✓ Good      ║
 ║                                  ║
-║  POWER PHASES DETECTED:         ║
-║    Stroke 1-8:   165 RPM avg    ║
+║  POWER PHASES DETECTED:          ║
+║    Stroke 1-8:   165 RPM avg     ║
 ║    Stroke 9-15:  152 RPM avg ⚠  ║
-║    Stroke 16+:   159 RPM avg    ║
+║    Stroke 16+:   159 RPM avg     ║
 ╚══════════════════════════════════╝
 ```
 
@@ -169,15 +169,15 @@ Screen displays:
 
 ```
 ╔══════════════════════════════════╗
-║    INTERVAL 3 of 8              ║
+║    INTERVAL 3 of 8               ║
 ╠══════════════════════════════════╣
-║         WORK PHASE              ║
+║         WORK PHASE               ║
 ║                                  ║
-║           00:17                 ║
-║    [████████░░░░░░░░░]          ║
+║           00:17                  ║
+║    [████████░░░░░░░░░]           ║
 ║                                  ║
-║  Current Power: 723W            ║
-║  Avg This Set:  698W            ║
+║  Current Power: 723W             ║
+║  Avg This Set:  698W             ║
 ╚══════════════════════════════════╝
 ```
 
@@ -195,12 +195,12 @@ Review past training data.
 
 ```
 ╔══════════════════════════════════╗
-║       SESSION HISTORY           ║
+║       SESSION HISTORY            ║
 ╠══════════════════════════════════╣
-║  Feb 16 - Morning (15 runs)     ║
-║  Feb 15 - Evening (23 runs)     ║
-║  Feb 14 - Track Day (47 runs)   ║
-║  Feb 13 - Morning (12 runs)     ║
+║  Feb 16 - Morning (15 runs)      ║
+║  Feb 15 - Evening (23 runs)      ║
+║  Feb 14 - Track Day (47 runs)    ║
+║  Feb 13 - Morning (12 runs)      ║
 ╚══════════════════════════════════╝
 ```
 
@@ -279,7 +279,7 @@ When WiFi enabled:
 
 **USB Export:**
 
-1. Connect CoreS3 to computer via USB-C
+1. Connect Main Controller to computer via USB-C
 2. Device shows: `USB Mode - Select Action`
 3. Choose **Export Data**
 4. Select sessions to export

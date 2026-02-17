@@ -440,7 +440,7 @@ Access real-time data and advanced analytics from any device with a web browser.
 ### Connecting to Dashboard
 
 **Quick method (QR code):**
-1. Open Settings on CoreS3
+1. Open Settings on Main Controller
 2. Scroll to QR code at bottom
 3. Scan with phone/tablet camera
 4. Tap notification to connect
@@ -448,9 +448,9 @@ Access real-time data and advanced analytics from any device with a web browser.
 
 **Manual method:**
 1. Go to WiFi settings on your device
-2. Connect to network shown on CoreS3 (e.g., "AppGatePro_ABC123")
+2. Connect to network shown on Main Controller (e.g., "AppGatePro_ABC123")
 3. Open browser
-4. Navigate to URL shown on CoreS3
+4. Navigate to URL shown on Main Controller
 5. Dashboard loads
 
 ### Live Monitoring
@@ -479,7 +479,7 @@ Access real-time data and advanced analytics from any device with a web browser.
 **Summary card:**
 ```
 ┌─────────────────────────────────┐
-│  Run #47 - 14:32:18            │
+│  Run #47 - 14:32:18             │
 ├─────────────────────────────────┤
 │  Time:        5.234s            │
 │  Reaction:    0.287s            │
@@ -508,13 +508,13 @@ Access real-time data and advanced analytics from any device with a web browser.
 **Runs table:**
 ```
 ╔═══════════════════════════════════════════╗
-║  Run  │  Time   │ React │ Max G │ Speed  ║
+║  Run  │  Time   │ React │ Max G │ Speed   ║
 ╠═══════════════════════════════════════════╣
-║   1   │ 5.345s  │ 0.298 │ 1.7G  │ 3.75   ║
-║   2   │ 5.234s  │ 0.287 │ 1.8G  │ 3.82 ● ║
-║   3   │ 5.412s  │ 0.312 │ 1.6G  │ 3.69   ║
-║   4   │ 5.289s  │ 0.291 │ 1.8G  │ 3.79   ║
-║   5   │ 5.201s  │ 0.283 │ 1.9G  │ 3.85 ● ║
+║   1   │ 5.345s  │ 0.298 │ 1.7G  │ 3.75    ║
+║   2   │ 5.234s  │ 0.287 │ 1.8G  │ 3.82 ●  ║
+║   3   │ 5.412s  │ 0.312 │ 1.6G  │ 3.69    ║
+║   4   │ 5.289s  │ 0.291 │ 1.8G  │ 3.79    ║
+║   5   │ 5.201s  │ 0.283 │ 1.9G  │ 3.85 ●  ║
 ╚═══════════════════════════════════════════╝
 ● = Personal Record
 ```
